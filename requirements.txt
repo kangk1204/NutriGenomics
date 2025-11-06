@@ -1,0 +1,10 @@
+numpy>=1.26
+pandas>=2.2
+pyarrow>=15.0
+rapidfuzz>=3.8
+requests>=2.31
+tqdm>=4.66
+plotly>=5.20
+networkx>=3.2
+matplotlib>=3.9
+reportlab>=4.2
