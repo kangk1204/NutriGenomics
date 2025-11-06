@@ -53,6 +53,14 @@ brew install python@3.11 git wget unzip
    ```
    실행이 끝나면 `data/processed/`에 Parquet, `food_health_report.html`에 시각화 결과가 생성됩니다.
 
+### 다음 실행(재방문)
+설치가 끝난 뒤에는 매번 아래 두 줄만 실행하면 됩니다.
+```bash
+source .venv/bin/activate           # Windows: .venv\Scripts\activate
+python setup_data_pipeline.py --preprocess-only
+```
+원본 데이터를 다시 내려받아야 할 때만 `--download-only` 옵션을 추가하세요.
+
 ## 🔽 데이터 다운로드 & 전처리
 | 명령 | 설명 |
 | --- | --- |
