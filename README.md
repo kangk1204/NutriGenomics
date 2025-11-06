@@ -30,7 +30,7 @@ brew install python@3.11 git wget unzip
 ## 🚀 5분 설치 절차
 1. **저장소로 이동**
    ```bash
-   cd /Volumes/exthdd/Projects/00_KFRI_NutriOmics_MAIN_202508/02_20251106_NutriOmics
+   cd /path/to/NutriGenomics
    ```
 2. **가상환경 만들기**
    ```bash

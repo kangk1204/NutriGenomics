@@ -1,0 +1,17 @@
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.venv/
+
+# Project artifacts
+.Rhistory
+food_health_report.html
+cache/
+data/raw/
+data/processed/
