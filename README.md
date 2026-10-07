@@ -1,3 +1,15 @@
+# NutriGenomics 공개 연구 구성요소
+
+검토된 7개 구성요소의 코드·테스트·출처·라이선스는 [public-components](public-components/)에 있습니다. [구성요소 안내](public-components/README.md), [검증 기록](public-components/VALIDATION.json), [공개 범위와 라이선스](public-components/NOTICE.md), [API 안내](public-components/public-api/README.md)를 확인하세요.
+
+현재 공개 데이터 전용 API의 배포와 모델 추론의 공개 HTTP 동작은 **미검증**입니다. 공개 배포 진입점은 `public-components/public-api/worker.mjs`입니다. 로컬의 제한된 검증 **148건(API 19건 + Python 129건)**이 통과했으며, 이 수치는 GitHub Actions 등 원격 CI 실행 결과가 아닙니다.
+
+## Legacy: 선택적인 대용량 다운로드 안내
+
+아래는 기존 데이터 파이프라인의 다운로드·설치 안내입니다. 새 공개 구성요소의 코드와 검증 문서를 살펴보는 데 대용량 다운로드는 필요하지 않습니다. 기존 안내 내용은 그대로 보존했습니다.
+
+---
+
 # NutriGenomics 데이터 파이프라인 설치 가이드
 
 > “5단계만 따라 하면 원본 데이터 다운로드부터 분석 리포트까지 한 번에 끝납니다.”
