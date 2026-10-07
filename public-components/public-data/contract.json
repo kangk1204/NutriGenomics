@@ -1,0 +1,42 @@
+{
+  "schema_version": "fooddb-public-v1",
+  "immutable": true,
+  "input_files": [
+    "dataset.json",
+    "rights_manifest.json"
+  ],
+  "public_payload_directory": "public only; never include its parent or private_sources",
+  "arrays": {
+    "compounds": "One complete PubChem structure per id; retain stereo/form key",
+    "names": "One computed English name per compound; no Korean claims",
+    "identifier_links": "CID-to-complete-InChIKey identity only; no occurrence assertion",
+    "foods": "Empty until food-field rights and context pass",
+    "relationships": "Empty until food-occurrence rights and evidence pass"
+  },
+  "required_compound_fields": [
+    "id",
+    "entity_type",
+    "pubchem_cid",
+    "iupac_name",
+    "inchi",
+    "full_inchikey",
+    "isomeric_smiles",
+    "match_status",
+    "source"
+  ],
+  "match_statuses": [
+    "identity_verified",
+    "full_structure_key_verified"
+  ],
+  "name_label_statuses": [
+    "source_computed"
+  ],
+  "rules": [
+    "Serve the manifest release as a snapshot; no mutable DB connection.",
+    "Display counts and zero food coverage truthfully.",
+    "Display PubChem attribution and source links; no agency endorsement.",
+    "Never map normalized names or first InChIKey blocks to exact identities.",
+    "Do not expose private bilingual names, aliases, candidates, paths, machine identities, or raw captured documents.",
+    "Unknown/rights-held data must remain unavailable, not synthetic sample rows."
+  ]
+}

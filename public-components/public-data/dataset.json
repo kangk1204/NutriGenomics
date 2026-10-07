@@ -1,0 +1,3740 @@
+{
+  "schema_version": "fooddb-public-v1",
+  "release_id": "fooddb-public-20261005-0230",
+  "generated_utc": "2026-10-05T02:35:06.587025+00:00",
+  "counts": {
+    "compounds": 53,
+    "names_en_computed": 53,
+    "names_ko": 0,
+    "identifier_links": 53,
+    "foods": 0,
+    "food_compound_relationships": 0,
+    "public_fuzzy_candidates": 0
+  },
+  "coverage": {
+    "staged_structure_denominator": 4630,
+    "private_verified_bilingual_structure_count": 53,
+    "public_compound_registry_count": 53,
+    "public_bilingual_pairs": 0,
+    "coverage_note": "A real structure registry pilot, not a food occurrence database or a fully bilingual catalog. No licensed food relationships are included."
+  },
+  "compounds": [
+    {
+      "id": "pubchem:5281855",
+      "entity_type": "compound",
+      "pubchem_cid": 5281855,
+      "iupac_name": "6,7,13,14-tetrahydroxy-2,9-dioxatetracyclo[6.6.2.04,16.011,15]hexadeca-1(15),4,6,8(16),11,13-hexaene-3,10-dione",
+      "inchi": "InChI=1S/C14H6O8/c15-5-1-3-7-8-4(14(20)22-11(7)9(5)17)2-6(16)10(18)12(8)21-13(3)19/h1-2,15-18H",
+      "full_inchikey": "AFSDNFLWKVMVRB-UHFFFAOYSA-N",
+      "isomeric_smiles": "C1=C2C3=C(C(=C1O)O)OC(=O)C4=CC(=C(C(=C43)OC2=O)O)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5281855/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281855",
+        "retrieved_utc": "2026-10-05T02:32:07.719837+00:00",
+        "response_sha256": "78451bb42db3e35b18af321a59f66198dcb60377a96c2b23dc41381703fddfb1",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.9.3 (PubChem release 2025.09.15)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 4.2.0 (PubChem release 2025.09.15)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:6288",
+      "entity_type": "compound",
+      "pubchem_cid": 6288,
+      "iupac_name": "(2S,3R)-2-amino-3-hydroxybutanoic acid",
+      "inchi": "InChI=1S/C4H9NO3/c1-2(6)3(5)4(7)8/h2-3,6H,5H2,1H3,(H,7,8)/t2-,3+/m1/s1",
+      "full_inchikey": "AYFVYJQAPQTCCC-GBXIJSLDSA-N",
+      "isomeric_smiles": "C[C@H]([C@@H](C(=O)O)N)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6288/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/6288",
+        "retrieved_utc": "2026-10-05T02:32:07.716513+00:00",
+        "response_sha256": "9c041986d5a0c85ce619f9b8b136edecbbb1e626d317acd683638b5f37c2b19a",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:54670067",
+      "entity_type": "compound",
+      "pubchem_cid": 54670067,
+      "iupac_name": "(2R)-2-[(1S)-1,2-dihydroxyethyl]-3,4-dihydroxy-2H-furan-5-one",
+      "inchi": "InChI=1S/C6H8O6/c7-1-2(8)5-3(9)4(10)6(11)12-5/h2,5,7-10H,1H2/t2-,5+/m0/s1",
+      "full_inchikey": "CIWBSHSKHKDKBQ-JLAZNSOCSA-N",
+      "isomeric_smiles": "C([C@@H]([C@@H]1C(=C(C(=O)O1)O)O)O)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/54670067/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067",
+        "retrieved_utc": "2026-10-05T02:32:08.440650+00:00",
+        "response_sha256": "e032bbc51bede729be059dfe603b68487052d2fd72859e1edafdbaf645d9e75d",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:5960",
+      "entity_type": "compound",
+      "pubchem_cid": 5960,
+      "iupac_name": "(2S)-2-aminobutanedioic acid",
+      "inchi": "InChI=1S/C4H7NO4/c5-2(4(8)9)1-3(6)7/h2H,1,5H2,(H,6,7)(H,8,9)/t2-/m0/s1",
+      "full_inchikey": "CKLJMWTZIZZHCS-REOHCLBHSA-N",
+      "isomeric_smiles": "C([C@@H](C(=O)O)N)C(=O)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5960/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5960",
+        "retrieved_utc": "2026-10-05T02:32:08.421742+00:00",
+        "response_sha256": "821ac4e94a2d3487dcc4904a36325efd13504d075260bc72db875ef72ca11bfb",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:180",
+      "entity_type": "compound",
+      "pubchem_cid": 180,
+      "iupac_name": "propan-2-one",
+      "inchi": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3",
+      "full_inchikey": "CSCPPACGZOOCGX-UHFFFAOYSA-N",
+      "isomeric_smiles": "CC(=O)C",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/180/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/180",
+        "retrieved_utc": "2026-10-05T02:32:09.214989+00:00",
+        "response_sha256": "c78068f8ad60dacca52ec284bd3e2693cc9e83e90a109b02a0cabd94aacce43c",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:280",
+      "entity_type": "compound",
+      "pubchem_cid": 280,
+      "iupac_name": "carbon dioxide",
+      "inchi": "InChI=1S/CO2/c2-1-3",
+      "full_inchikey": "CURLTUGMZLYLDI-UHFFFAOYSA-N",
+      "isomeric_smiles": "C(=O)=O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/280/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/280",
+        "retrieved_utc": "2026-10-05T02:32:08.853123+00:00",
+        "response_sha256": "7f88fb4f2be9ddcf44018d75af960d1fe519bd80dad8144d5bf9643b3e2479f1",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.9.3 (PubChem release 2025.09.15)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 4.2.0 (PubChem release 2025.09.15)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:936",
+      "entity_type": "compound",
+      "pubchem_cid": 936,
+      "iupac_name": "pyridine-3-carboxamide",
+      "inchi": "InChI=1S/C6H6N2O/c7-6(9)5-2-1-3-8-4-5/h1-4H,(H2,7,9)",
+      "full_inchikey": "DFPAKSUCGFBDDF-UHFFFAOYSA-N",
+      "isomeric_smiles": "C1=CC(=CN=C1)C(=O)N",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/936/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/936",
+        "retrieved_utc": "2026-10-05T02:32:09.657653+00:00",
+        "response_sha256": "2b610c9cf9833ab7af79e0efe6c31a5443bc55935a98036fe4dbe56891a94e49",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:750",
+      "entity_type": "compound",
+      "pubchem_cid": 750,
+      "iupac_name": "2-aminoacetic acid",
+      "inchi": "InChI=1S/C2H5NO2/c3-1-2(4)5/h1,3H2,(H,4,5)",
+      "full_inchikey": "DHMQDGOQFOQNFH-UHFFFAOYSA-N",
+      "isomeric_smiles": "C(C(=O)O)N",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/750/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/750",
+        "retrieved_utc": "2026-10-05T02:32:09.905852+00:00",
+        "response_sha256": "9b452e8f282024e0f29e10098ce517509475e767c0fb547485890a7afee978c6",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:31272",
+      "entity_type": "compound",
+      "pubchem_cid": 31272,
+      "iupac_name": "butyl acetate",
+      "inchi": "InChI=1S/C6H12O2/c1-3-4-5-8-6(2)7/h3-5H2,1-2H3",
+      "full_inchikey": "DKPFZGUDAPQIHT-UHFFFAOYSA-N",
+      "isomeric_smiles": "CCCCOC(=O)C",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/31272/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/31272",
+        "retrieved_utc": "2026-10-05T02:32:10.369176+00:00",
+        "response_sha256": "4267942cd83dcca772d035f9ffed030459b27b490309502d1f354cf2394340d3",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:7590",
+      "entity_type": "compound",
+      "pubchem_cid": 7590,
+      "iupac_name": "ethyl 2-phenylacetate",
+      "inchi": "InChI=1S/C10H12O2/c1-2-12-10(11)8-9-6-4-3-5-7-9/h3-7H,2,8H2,1H3",
+      "full_inchikey": "DULCUDSUACXJJC-UHFFFAOYSA-N",
+      "isomeric_smiles": "CCOC(=O)CC1=CC=CC=C1",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7590/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/7590",
+        "retrieved_utc": "2026-10-05T02:32:10.217275+00:00",
+        "response_sha256": "02fb56930dbcd610de4f4b65a64b90997d78c1ace5566533de6af1c65f87bb1d",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.9.3 (PubChem release 2025.09.15)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 4.2.0 (PubChem release 2025.09.15)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:6137",
+      "entity_type": "compound",
+      "pubchem_cid": 6137,
+      "iupac_name": "(2S)-2-amino-4-methylsulfanylbutanoic acid",
+      "inchi": "InChI=1S/C5H11NO2S/c1-9-3-2-4(6)5(7)8/h4H,2-3,6H2,1H3,(H,7,8)/t4-/m0/s1",
+      "full_inchikey": "FFEARJCKVFRZRR-BYPYZUCNSA-N",
+      "isomeric_smiles": "CSCC[C@@H](C(=O)O)N",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6137/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/6137",
+        "retrieved_utc": "2026-10-05T02:32:10.950802+00:00",
+        "response_sha256": "713924b8e9567ad7acd1e4c32df74133056a04296f4cd6be0b9b6d5627921f1a",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:7749",
+      "entity_type": "compound",
+      "pubchem_cid": 7749,
+      "iupac_name": "ethyl propanoate",
+      "inchi": "InChI=1S/C5H10O2/c1-3-5(6)7-4-2/h3-4H2,1-2H3",
+      "full_inchikey": "FKRCODPIKNYEAC-UHFFFAOYSA-N",
+      "isomeric_smiles": "CCC(=O)OCC",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7749/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/7749",
+        "retrieved_utc": "2026-10-05T02:32:10.665813+00:00",
+        "response_sha256": "b7ba1b473664605d3e6391914bd5901cee52466f5a8601ef963a3f9a9d165b35",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:6826",
+      "entity_type": "compound",
+      "pubchem_cid": 6826,
+      "iupac_name": "methyl 2-(methylamino)benzoate",
+      "inchi": "InChI=1S/C9H11NO2/c1-10-8-6-4-3-5-7(8)9(11)12-2/h3-6,10H,1-2H3",
+      "full_inchikey": "GVOWHGSUZUUUDR-UHFFFAOYSA-N",
+      "isomeric_smiles": "CNC1=CC=CC=C1C(=O)OC",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6826/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/6826",
+        "retrieved_utc": "2026-10-05T02:32:11.345735+00:00",
+        "response_sha256": "b77ba22296cf5de2753afb1c3b9ecadbc7ff20d2cf542fb6975746f45717b4d9",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:240",
+      "entity_type": "compound",
+      "pubchem_cid": 240,
+      "iupac_name": "benzaldehyde",
+      "inchi": "InChI=1S/C7H6O/c8-6-7-4-2-1-3-5-7/h1-6H",
+      "full_inchikey": "HUMNYLRZRPPJDN-UHFFFAOYSA-N",
+      "isomeric_smiles": "C1=CC=C(C=C1)C=O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/240/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/240",
+        "retrieved_utc": "2026-10-05T02:32:11.698624+00:00",
+        "response_sha256": "e6cb7df96b182cf15a8174ad80966316114e88df2e8011cbd9db3e260a7f11d3",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.9.3 (PubChem release 2025.09.15)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 4.2.0 (PubChem release 2025.09.15)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:947",
+      "entity_type": "compound",
+      "pubchem_cid": 947,
+      "iupac_name": "molecular nitrogen",
+      "inchi": "InChI=1S/N2/c1-2",
+      "full_inchikey": "IJGRMHOSHXDMSA-UHFFFAOYSA-N",
+      "isomeric_smiles": "N#N",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/947/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/947",
+        "retrieved_utc": "2026-10-05T02:32:12.033879+00:00",
+        "response_sha256": "247cac00517516ad12ec8d21f2d5d24da886595bcbf3c461d09cf02c7c629464",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:5280445",
+      "entity_type": "compound",
+      "pubchem_cid": 5280445,
+      "iupac_name": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxychromen-4-one",
+      "inchi": "InChI=1S/C15H10O6/c16-8-4-11(19)15-12(20)6-13(21-14(15)5-8)7-1-2-9(17)10(18)3-7/h1-6,16-19H",
+      "full_inchikey": "IQPNAANSBPBGFQ-UHFFFAOYSA-N",
+      "isomeric_smiles": "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5280445/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280445",
+        "retrieved_utc": "2026-10-05T02:32:12.003138+00:00",
+        "response_sha256": "73b4fb3f354e9f71442b23f8b81182fc73c53a4d8885e607f9065945c4af177d",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:5280863",
+      "entity_type": "compound",
+      "pubchem_cid": 5280863,
+      "iupac_name": "3,5,7-trihydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+      "inchi": "InChI=1S/C15H10O6/c16-8-3-1-7(2-4-8)15-14(20)13(19)12-10(18)5-9(17)6-11(12)21-15/h1-6,16-18,20H",
+      "full_inchikey": "IYRMWMYZSQPJKC-UHFFFAOYSA-N",
+      "isomeric_smiles": "C1=CC(=CC=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5280863/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280863",
+        "retrieved_utc": "2026-10-05T02:32:12.768639+00:00",
+        "response_sha256": "6f2d53bc9a4e2273e8b65448cafc9fbcf94d3fae7d5c21760d95a79bbb09ab9b",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.9.3 (PubChem release 2025.09.15)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 4.2.0 (PubChem release 2025.09.15)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:5962",
+      "entity_type": "compound",
+      "pubchem_cid": 5962,
+      "iupac_name": "(2S)-2,6-diaminohexanoic acid",
+      "inchi": "InChI=1S/C6H14N2O2/c7-4-2-1-3-5(8)6(9)10/h5H,1-4,7-8H2,(H,9,10)/t5-/m0/s1",
+      "full_inchikey": "KDXKERNSBIXSRK-YFKPBYRVSA-N",
+      "isomeric_smiles": "C(CCN)C[C@@H](C(=O)O)N",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5962/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5962",
+        "retrieved_utc": "2026-10-05T02:32:12.347926+00:00",
+        "response_sha256": "163ae42c4ec9cea161c3980ad02980f76f24f110d843bab885e0772a7930aa4f",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:1110",
+      "entity_type": "compound",
+      "pubchem_cid": 1110,
+      "iupac_name": "butanedioic acid",
+      "inchi": "InChI=1S/C4H6O4/c5-3(6)1-2-4(7)8/h1-2H2,(H,5,6)(H,7,8)",
+      "full_inchikey": "KDYFGRWQOYBRFD-UHFFFAOYSA-N",
+      "isomeric_smiles": "C(CC(=O)O)C(=O)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1110/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/1110",
+        "retrieved_utc": "2026-10-05T02:32:12.670348+00:00",
+        "response_sha256": "a276fecb073c884714ad642aa3bc5246f76ad9b77122fa71a943b0a7cf5f55be",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.9.3 (PubChem release 2025.09.15)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 4.2.0 (PubChem release 2025.09.15)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:8175",
+      "entity_type": "compound",
+      "pubchem_cid": 8175,
+      "iupac_name": "decanal",
+      "inchi": "InChI=1S/C10H20O/c1-2-3-4-5-6-7-8-9-10-11/h10H,2-9H2,1H3",
+      "full_inchikey": "KSMVZQYAVGTKIV-UHFFFAOYSA-N",
+      "isomeric_smiles": "CCCCCCCCCC=O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8175/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/8175",
+        "retrieved_utc": "2026-10-05T02:32:13.037821+00:00",
+        "response_sha256": "13f88613ea2b310900af54c1636281071e94913bdd9903b5962696c1ec2bbfd9",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:7410",
+      "entity_type": "compound",
+      "pubchem_cid": 7410,
+      "iupac_name": "1-phenylethanone",
+      "inchi": "InChI=1S/C8H8O/c1-7(9)8-5-3-2-4-6-8/h2-6H,1H3",
+      "full_inchikey": "KWOLFJPFCHCOCG-UHFFFAOYSA-N",
+      "isomeric_smiles": "CC(=O)C1=CC=CC=C1",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7410/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/7410",
+        "retrieved_utc": "2026-10-05T02:32:13.498495+00:00",
+        "response_sha256": "233bddd33621f8c25036c7a57f676cabec4e6b267e006181981278196acd73c1",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.9.3 (PubChem release 2025.09.15)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 4.2.0 (PubChem release 2025.09.15)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:24526",
+      "entity_type": "compound",
+      "pubchem_cid": 24526,
+      "iupac_name": "molecular chlorine",
+      "inchi": "InChI=1S/Cl2/c1-2",
+      "full_inchikey": "KZBUYRJDOAKODT-UHFFFAOYSA-N",
+      "isomeric_smiles": "ClCl",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/24526/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/24526",
+        "retrieved_utc": "2026-10-05T02:32:13.796687+00:00",
+        "response_sha256": "eeede2e2526b17740f71aa89cb6eb2b18e706f12218062171af936d8e13d0d0d",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:5280443",
+      "entity_type": "compound",
+      "pubchem_cid": 5280443,
+      "iupac_name": "5,7-dihydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+      "inchi": "InChI=1S/C15H10O5/c16-9-3-1-8(2-4-9)13-7-12(19)15-11(18)5-10(17)6-14(15)20-13/h1-7,16-18H",
+      "full_inchikey": "KZNIFHPLKGYRTM-UHFFFAOYSA-N",
+      "isomeric_smiles": "C1=CC(=CC=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5280443/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280443",
+        "retrieved_utc": "2026-10-05T02:32:14.187855+00:00",
+        "response_sha256": "5925cbb080f7cc90521ae8eb7f715b38e1f52601a8c7f8e9ddc9e7563ee2e4c4",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.9.3 (PubChem release 2025.09.15)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 4.2.0 (PubChem release 2025.09.15)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:1183",
+      "entity_type": "compound",
+      "pubchem_cid": 1183,
+      "iupac_name": "4-hydroxy-3-methoxybenzaldehyde",
+      "inchi": "InChI=1S/C8H8O3/c1-11-8-4-6(5-9)2-3-7(8)10/h2-5,10H,1H3",
+      "full_inchikey": "MWOOGOJBHIARFG-UHFFFAOYSA-N",
+      "isomeric_smiles": "COC1=C(C=CC(=C1)C=O)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1183/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/1183",
+        "retrieved_utc": "2026-10-05T02:32:14.493431+00:00",
+        "response_sha256": "f9e0e7d23ed89e337ad3026b55d10125c69b58048d93d13c03e5b1982fcf671b",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:1004",
+      "entity_type": "compound",
+      "pubchem_cid": 1004,
+      "iupac_name": "phosphoric acid",
+      "inchi": "InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)",
+      "full_inchikey": "NBIIXXVUZAFLBC-UHFFFAOYSA-N",
+      "isomeric_smiles": "OP(=O)(O)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1004/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/1004",
+        "retrieved_utc": "2026-10-05T02:32:14.518229+00:00",
+        "response_sha256": "7e6e1cf4cea994fa2de58af788fc65976c1334db02ac0835b98d6825e24db659",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:7762",
+      "entity_type": "compound",
+      "pubchem_cid": 7762,
+      "iupac_name": "ethyl butanoate",
+      "inchi": "InChI=1S/C6H12O2/c1-3-5-6(7)8-4-2/h3-5H2,1-2H3",
+      "full_inchikey": "OBNCKNCVKJNDBV-UHFFFAOYSA-N",
+      "isomeric_smiles": "CCCC(=O)OCC",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7762/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/7762",
+        "retrieved_utc": "2026-10-05T02:32:14.843152+00:00",
+        "response_sha256": "138a01a38d1f129a4cfb76a411ca48daa25ae85a719ba0e254a4841e3de1e417",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:145742",
+      "entity_type": "compound",
+      "pubchem_cid": 145742,
+      "iupac_name": "(2S)-pyrrolidine-2-carboxylic acid",
+      "inchi": "InChI=1S/C5H9NO2/c7-5(8)4-2-1-3-6-4/h4,6H,1-3H2,(H,7,8)/t4-/m0/s1",
+      "full_inchikey": "ONIBWKKTOPOVIA-BYPYZUCNSA-N",
+      "isomeric_smiles": "C1C[C@H](NC1)C(=O)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/145742/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/145742",
+        "retrieved_utc": "2026-10-05T02:32:14.843410+00:00",
+        "response_sha256": "7d98146c13f31b0787dcc214248b49b3fee78bd7278bb5e4557acbb7ad20f24d",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:4133",
+      "entity_type": "compound",
+      "pubchem_cid": 4133,
+      "iupac_name": "methyl 2-hydroxybenzoate",
+      "inchi": "InChI=1S/C8H8O3/c1-11-8(10)6-4-2-3-5-7(6)9/h2-5,9H,1H3",
+      "full_inchikey": "OSWPMRLSEDHDFF-UHFFFAOYSA-N",
+      "isomeric_smiles": "COC(=O)C1=CC=CC=C1O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/4133/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/4133",
+        "retrieved_utc": "2026-10-05T02:32:15.531569+00:00",
+        "response_sha256": "066aa379275932923795a39a988fb885c8063de0ac45b381e7c46270cb75891d",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:135398658",
+      "entity_type": "compound",
+      "pubchem_cid": 135398658,
+      "iupac_name": "(2S)-2-[[4-[(2-amino-4-oxo-3H-pteridin-6-yl)methylamino]benzoyl]amino]pentanedioic acid",
+      "inchi": "InChI=1S/C19H19N7O6/c20-19-25-15-14(17(30)26-19)23-11(8-22-15)7-21-10-3-1-9(2-4-10)16(29)24-12(18(31)32)5-6-13(27)28/h1-4,8,12,21H,5-7H2,(H,24,29)(H,27,28)(H,31,32)(H3,20,22,25,26,30)/t12-/m0/s1",
+      "full_inchikey": "OVBPIULPVIDEAO-LBPRGKRZSA-N",
+      "isomeric_smiles": "C1=CC(=CC=C1C(=O)N[C@@H](CCC(=O)O)C(=O)O)NCC2=CN=C3C(=N2)C(=O)NC(=N3)N",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/135398658/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/135398658",
+        "retrieved_utc": "2026-10-05T02:32:15.538588+00:00",
+        "response_sha256": "2eb5c220b9696cc041e048f731f50ae1514aaa1d09d5fbf2e5950c1791cd9686",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.9.3 (PubChem release 2025.09.15)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 4.2.0 (PubChem release 2025.09.15)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:7945",
+      "entity_type": "compound",
+      "pubchem_cid": 7945,
+      "iupac_name": "ethyl 3-methylbutanoate",
+      "inchi": "InChI=1S/C7H14O2/c1-4-9-7(8)5-6(2)3/h6H,4-5H2,1-3H3",
+      "full_inchikey": "PPXUHEORWJQRHJ-UHFFFAOYSA-N",
+      "isomeric_smiles": "CCOC(=O)CC(C)C",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7945/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/7945",
+        "retrieved_utc": "2026-10-05T02:32:16.202418+00:00",
+        "response_sha256": "393af444dd68eac0c91f3b9d35787ed91c4f19693d80384bec2b29c1d65cab94",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:7795",
+      "entity_type": "compound",
+      "pubchem_cid": 7795,
+      "iupac_name": "3-methylbutyl butanoate",
+      "inchi": "InChI=1S/C9H18O2/c1-4-5-9(10)11-7-6-8(2)3/h8H,4-7H2,1-3H3",
+      "full_inchikey": "PQLMXFQTAMDXIZ-UHFFFAOYSA-N",
+      "isomeric_smiles": "CCCC(=O)OCCC(C)C",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7795/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/7795",
+        "retrieved_utc": "2026-10-05T02:32:16.301342+00:00",
+        "response_sha256": "e6b2ea6be059c83bf152574a939b0ea48a2e8be09dfa9ae3970a743921477344",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:938",
+      "entity_type": "compound",
+      "pubchem_cid": 938,
+      "iupac_name": "pyridine-3-carboxylic acid",
+      "inchi": "InChI=1S/C6H5NO2/c8-6(9)5-2-1-3-7-4-5/h1-4H,(H,8,9)",
+      "full_inchikey": "PVNIIMVLHYAWGP-UHFFFAOYSA-N",
+      "isomeric_smiles": "C1=CC(=CN=C1)C(=O)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/938/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/938",
+        "retrieved_utc": "2026-10-05T02:32:16.943389+00:00",
+        "response_sha256": "bd56721e100e5e3513b196cb3a3b2833e558a957cd5f48e86e529709fad46fbf",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:222",
+      "entity_type": "compound",
+      "pubchem_cid": 222,
+      "iupac_name": "azane",
+      "inchi": "InChI=1S/H3N/h1H3",
+      "full_inchikey": "QGZKDVFQNNGYKY-UHFFFAOYSA-N",
+      "isomeric_smiles": "N",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/222/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/222",
+        "retrieved_utc": "2026-10-05T02:32:17.128658+00:00",
+        "response_sha256": "c98cf6bd3d5eb3c44de69d5b43fde07cd90d413c37886d17648cf20280dce8f9",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:6305",
+      "entity_type": "compound",
+      "pubchem_cid": 6305,
+      "iupac_name": "(2S)-2-amino-3-(1H-indol-3-yl)propanoic acid",
+      "inchi": "InChI=1S/C11H12N2O2/c12-9(11(14)15)5-7-6-13-10-4-2-1-3-8(7)10/h1-4,6,9,13H,5,12H2,(H,14,15)/t9-/m0/s1",
+      "full_inchikey": "QIVBCDIJIAJPQS-VIFPVBQESA-N",
+      "isomeric_smiles": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6305/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/6305",
+        "retrieved_utc": "2026-10-05T02:32:17.273509+00:00",
+        "response_sha256": "f1029ad202284d25f32c2e29407c4110cbb40ca0d092e725d46ea46c285be518",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:5950",
+      "entity_type": "compound",
+      "pubchem_cid": 5950,
+      "iupac_name": "(2S)-2-aminopropanoic acid",
+      "inchi": "InChI=1S/C3H7NO2/c1-2(4)3(5)6/h2H,4H2,1H3,(H,5,6)/t2-/m0/s1",
+      "full_inchikey": "QNAYBMKLOCPYGJ-REOHCLBHSA-N",
+      "isomeric_smiles": "C[C@@H](C(=O)O)N",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5950/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5950",
+        "retrieved_utc": "2026-10-05T02:32:17.840282+00:00",
+        "response_sha256": "b23197a50077e57abc42acc9c704bbd58b2edfd5bc7830dd675ab15174c63c14",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:8048",
+      "entity_type": "compound",
+      "pubchem_cid": 8048,
+      "iupac_name": "ethyl decanoate",
+      "inchi": "InChI=1S/C12H24O2/c1-3-5-6-7-8-9-10-11-12(13)14-4-2/h3-11H2,1-2H3",
+      "full_inchikey": "RGXWDWUGBIJHDO-UHFFFAOYSA-N",
+      "isomeric_smiles": "CCCCCCCCCC(=O)OCC",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8048/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/8048",
+        "retrieved_utc": "2026-10-05T02:32:17.990256+00:00",
+        "response_sha256": "65aca7ff57bb89fc7ed659f934ff5ae9c22c5e9f131fd8d2419fe54910defd23",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:3314",
+      "entity_type": "compound",
+      "pubchem_cid": 3314,
+      "iupac_name": "2-methoxy-4-prop-2-enylphenol",
+      "inchi": "InChI=1S/C10H12O2/c1-3-4-8-5-6-9(11)10(7-8)12-2/h3,5-7,11H,1,4H2,2H3",
+      "full_inchikey": "RRAFCDWBNXTKKO-UHFFFAOYSA-N",
+      "isomeric_smiles": "COC1=C(C=CC(=C1)CC=C)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/3314/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/3314",
+        "retrieved_utc": "2026-10-05T02:32:18.150067+00:00",
+        "response_sha256": "4a8935d3cf31df29f4ec69d988de2d5aecdb17d2d53613e1fdb54b53d48672c0",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:2519",
+      "entity_type": "compound",
+      "pubchem_cid": 2519,
+      "iupac_name": "1,3,7-trimethylpurine-2,6-dione",
+      "inchi": "InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3",
+      "full_inchikey": "RYYVLZVUVIJVGH-UHFFFAOYSA-N",
+      "isomeric_smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/2519/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519",
+        "retrieved_utc": "2026-10-05T02:32:18.335451+00:00",
+        "response_sha256": "72aaf028a2a95ef94c75d613dcb2811fa6b18a490a1c3d43b50c626f5f32d293",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:31265",
+      "entity_type": "compound",
+      "pubchem_cid": 31265,
+      "iupac_name": "ethyl hexanoate",
+      "inchi": "InChI=1S/C8H16O2/c1-3-5-6-7-8(9)10-4-2/h3-7H2,1-2H3",
+      "full_inchikey": "SHZIWNPUGXLXDT-UHFFFAOYSA-N",
+      "isomeric_smiles": "CCCCCC(=O)OCC",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/31265/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/31265",
+        "retrieved_utc": "2026-10-05T02:32:18.511030+00:00",
+        "response_sha256": "59502575a9d064faaf2e53d4e015b521c3f9c7fbd6e2927e2c61973284bc315e",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:7797",
+      "entity_type": "compound",
+      "pubchem_cid": 7797,
+      "iupac_name": "ethyl heptanoate",
+      "inchi": "InChI=1S/C9H18O2/c1-3-5-6-7-8-9(10)11-4-2/h3-8H2,1-2H3",
+      "full_inchikey": "TVQGDYNRXLTQAP-UHFFFAOYSA-N",
+      "isomeric_smiles": "CCCCCCC(=O)OCC",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7797/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/7797",
+        "retrieved_utc": "2026-10-05T02:32:19.036368+00:00",
+        "response_sha256": "b29849b4b9fad938996dc2382cb2dec71dac2be6ccd828d336095ad9617ef0c8",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2021.10.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.0.6 (PubChem release 2021.10.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.0.6 (PubChem release 2021.10.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2024.12.12)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:8058",
+      "entity_type": "compound",
+      "pubchem_cid": 8058,
+      "iupac_name": "hexane",
+      "inchi": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3",
+      "full_inchikey": "VLKZOEOYAKHREP-UHFFFAOYSA-N",
+      "isomeric_smiles": "CCCCCC",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8058/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/8058",
+        "retrieved_utc": "2026-10-05T02:32:18.839199+00:00",
+        "response_sha256": "bab70666bbb8d6b4f63e52a285677a16fcb786e8ef23a188f83b60f920f81afb",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:33032",
+      "entity_type": "compound",
+      "pubchem_cid": 33032,
+      "iupac_name": "(2S)-2-aminopentanedioic acid",
+      "inchi": "InChI=1S/C5H9NO4/c6-3(5(9)10)1-2-4(7)8/h3H,1-2,6H2,(H,7,8)(H,9,10)/t3-/m0/s1",
+      "full_inchikey": "WHUUTDBJXJRKMK-VKHMYHEASA-N",
+      "isomeric_smiles": "C(CC(=O)O)[C@@H](C(=O)O)N",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/33032/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/33032",
+        "retrieved_utc": "2026-10-05T02:32:19.562498+00:00",
+        "response_sha256": "982a758d5ee168e2e9ed20f1c10af7a3e732e7d6c84d6c9a7345cca899491ca6",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:243",
+      "entity_type": "compound",
+      "pubchem_cid": 243,
+      "iupac_name": "benzoic acid",
+      "inchi": "InChI=1S/C7H6O2/c8-7(9)6-4-2-1-3-5-6/h1-5H,(H,8,9)",
+      "full_inchikey": "WPYMKLBDIGXBTP-UHFFFAOYSA-N",
+      "isomeric_smiles": "C1=CC=C(C=C1)C(=O)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/243/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/243",
+        "retrieved_utc": "2026-10-05T02:32:19.740800+00:00",
+        "response_sha256": "3311793e3e26acc3c3aaecc6ec1f58292544ec37f313d0247d2ac1ca126429e8",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.9.3 (PubChem release 2025.09.15)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 4.2.0 (PubChem release 2025.09.15)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:244",
+      "entity_type": "compound",
+      "pubchem_cid": 244,
+      "iupac_name": "phenylmethanol",
+      "inchi": "InChI=1S/C7H8O/c8-6-7-4-2-1-3-5-7/h1-5,8H,6H2",
+      "full_inchikey": "WVDDGKGOMKODPV-UHFFFAOYSA-N",
+      "isomeric_smiles": "C1=CC=C(C=C1)CO",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/244/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/244",
+        "retrieved_utc": "2026-10-05T02:32:19.879424+00:00",
+        "response_sha256": "62aca87b336d69dfcdf7861b52d0be7d9e5e83e7629f2827e1ea9b181ef6b026",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.9.3 (PubChem release 2025.09.15)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 4.2.0 (PubChem release 2025.09.15)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:8857",
+      "entity_type": "compound",
+      "pubchem_cid": 8857,
+      "iupac_name": "ethyl acetate",
+      "inchi": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3",
+      "full_inchikey": "XEKOWRVHYACXOJ-UHFFFAOYSA-N",
+      "isomeric_smiles": "CCOC(=O)C",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8857/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/8857",
+        "retrieved_utc": "2026-10-05T02:32:20.436515+00:00",
+        "response_sha256": "0091ad4badfaad1f67ae699f41beda1424c47a44fbfb8047a8c7864860b2f1c2",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:1123",
+      "entity_type": "compound",
+      "pubchem_cid": 1123,
+      "iupac_name": "2-aminoethanesulfonic acid",
+      "inchi": "InChI=1S/C2H7NO3S/c3-1-2-7(4,5)6/h1-3H2,(H,4,5,6)",
+      "full_inchikey": "XOAAWQZATWQOTB-UHFFFAOYSA-N",
+      "isomeric_smiles": "C(CS(=O)(=O)O)N",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1123/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/1123",
+        "retrieved_utc": "2026-10-05T02:32:20.181851+00:00",
+        "response_sha256": "bc5727fc149e8130777a6d29617ed91d9577dce5fcf5f390c45c5a6b244ca378",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:8369",
+      "entity_type": "compound",
+      "pubchem_cid": 8369,
+      "iupac_name": "3-hydroxy-2-methylpyran-4-one",
+      "inchi": "InChI=1S/C6H6O3/c1-4-6(8)5(7)2-3-9-4/h2-3,8H,1H3",
+      "full_inchikey": "XPCTZQVDEJYUGT-UHFFFAOYSA-N",
+      "isomeric_smiles": "CC1=C(C(=O)C=CO1)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8369/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/8369",
+        "retrieved_utc": "2026-10-05T02:32:20.495368+00:00",
+        "response_sha256": "43d905affb393c51f82fcdeba8ea3c36b1daae2d63bff11d77fdcd4d480e29b5",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:7983",
+      "entity_type": "compound",
+      "pubchem_cid": 7983,
+      "iupac_name": "butyl butanoate",
+      "inchi": "InChI=1S/C8H16O2/c1-3-5-7-10-8(9)6-4-2/h3-7H2,1-2H3",
+      "full_inchikey": "XUPYJHCZDLZNFP-UHFFFAOYSA-N",
+      "isomeric_smiles": "CCCCOC(=O)CCC",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7983/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/7983",
+        "retrieved_utc": "2026-10-05T02:32:20.727415+00:00",
+        "response_sha256": "ca2cec2f75ac4e23de080c6b952d9512292f0863c61fb4098df466a68882bdf1",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:5429",
+      "entity_type": "compound",
+      "pubchem_cid": 5429,
+      "iupac_name": "3,7-dimethylpurine-2,6-dione",
+      "inchi": "InChI=1S/C7H8N4O2/c1-10-3-8-5-4(10)6(12)9-7(13)11(5)2/h3H,1-2H3,(H,9,12,13)",
+      "full_inchikey": "YAPQBXQYLJRXSA-UHFFFAOYSA-N",
+      "isomeric_smiles": "CN1C=NC2=C1C(=O)NC(=O)N2C",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5429/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5429",
+        "retrieved_utc": "2026-10-05T02:32:20.877099+00:00",
+        "response_sha256": "6a08b13f96cc38de0bc7ea270ff45942886fa1f2488d69b95dbffb0d9660c931",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:7799",
+      "entity_type": "compound",
+      "pubchem_cid": 7799,
+      "iupac_name": "ethyl octanoate",
+      "inchi": "InChI=1S/C10H20O2/c1-3-5-6-7-8-9-10(11)12-4-2/h3-9H2,1-2H3",
+      "full_inchikey": "YYZUSRORWSJGET-UHFFFAOYSA-N",
+      "isomeric_smiles": "CCCCCCCC(=O)OCC",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7799/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/7799",
+        "retrieved_utc": "2026-10-05T02:32:21.406494+00:00",
+        "response_sha256": "56b831ab6e153523b2c715fa34620727a3b80528b4585257283a322c2401066b",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:5961",
+      "entity_type": "compound",
+      "pubchem_cid": 5961,
+      "iupac_name": "(2S)-2,5-diamino-5-oxopentanoic acid",
+      "inchi": "InChI=1S/C5H10N2O3/c6-3(5(9)10)1-2-4(7)8/h3H,1-2,6H2,(H2,7,8)(H,9,10)/t3-/m0/s1",
+      "full_inchikey": "ZDXPYRJPNDTMRX-VKHMYHEASA-N",
+      "isomeric_smiles": "C(CC(=O)N)[C@@H](C(=O)O)N",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5961/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5961",
+        "retrieved_utc": "2026-10-05T02:32:21.564791+00:00",
+        "response_sha256": "373b19e080d792a376c9a0bdba23495776fbd8112f843f45443cdb6d701b7bbf",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:445639",
+      "entity_type": "compound",
+      "pubchem_cid": 445639,
+      "iupac_name": "(Z)-octadec-9-enoic acid",
+      "inchi": "InChI=1S/C18H34O2/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18(19)20/h9-10H,2-8,11-17H2,1H3,(H,19,20)/b10-9-",
+      "full_inchikey": "ZQPPMHVWECSIRJ-KTKRTIGZSA-N",
+      "isomeric_smiles": "CCCCCCCC/C=C\\CCCCCCCC(=O)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/445639/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/445639",
+        "retrieved_utc": "2026-10-05T02:32:22.108207+00:00",
+        "response_sha256": "ee8f1ba317d0a4927551690fd2f2e86b276a74efb88381adf7425fb21297a92a",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pubchem:4947",
+      "entity_type": "compound",
+      "pubchem_cid": 4947,
+      "iupac_name": "propyl 3,4,5-trihydroxybenzoate",
+      "inchi": "InChI=1S/C10H12O5/c1-2-3-15-10(14)6-4-7(11)9(13)8(12)5-6/h4-5,11-13H,2-3H2,1H3",
+      "full_inchikey": "ZTHYODDOHIVTJV-UHFFFAOYSA-N",
+      "isomeric_smiles": "CCCOC(=O)C1=CC(=C(C(=C1)O)O)O",
+      "match_status": "full_structure_key_verified",
+      "source": {
+        "source_id": "pubchem-government-computed",
+        "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/4947/JSON?heading=Computed%20Descriptors",
+        "source_record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/4947",
+        "retrieved_utc": "2026-10-05T02:32:21.936642+00:00",
+        "response_sha256": "46ca2500da03624960c50ec3b69225afa6a23ee4733d0ae67f4ab9b9b0fdb68c",
+        "field_provenance": {
+          "iupac_name": {
+            "source": "pubchem-government-computed",
+            "heading": "IUPAC Name",
+            "computation_method": [
+              "Computed by Lexichem TK 2.9.3 (PubChem release 2025.09.15)"
+            ]
+          },
+          "inchi": {
+            "source": "pubchem-government-computed",
+            "heading": "InChI",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "full_inchikey": {
+            "source": "pubchem-government-computed",
+            "heading": "InChIKey",
+            "computation_method": [
+              "Computed by InChI 1.07.4 (PubChem release 2025.09.15)"
+            ]
+          },
+          "isomeric_smiles": {
+            "source": "pubchem-government-computed",
+            "heading": "SMILES",
+            "computation_method": [
+              "Computed by OEChem 4.2.0 (PubChem release 2025.09.15)"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "names": [
+    {
+      "id": "pubchem:5281855:iupac-en",
+      "entity_id": "pubchem:5281855",
+      "language": "en",
+      "name": "6,7,13,14-tetrahydroxy-2,9-dioxatetracyclo[6.6.2.04,16.011,15]hexadeca-1(15),4,6,8(16),11,13-hexaene-3,10-dione",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5281855/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:6288:iupac-en",
+      "entity_id": "pubchem:6288",
+      "language": "en",
+      "name": "(2S,3R)-2-amino-3-hydroxybutanoic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6288/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:54670067:iupac-en",
+      "entity_id": "pubchem:54670067",
+      "language": "en",
+      "name": "(2R)-2-[(1S)-1,2-dihydroxyethyl]-3,4-dihydroxy-2H-furan-5-one",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/54670067/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5960:iupac-en",
+      "entity_id": "pubchem:5960",
+      "language": "en",
+      "name": "(2S)-2-aminobutanedioic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5960/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:180:iupac-en",
+      "entity_id": "pubchem:180",
+      "language": "en",
+      "name": "propan-2-one",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/180/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:280:iupac-en",
+      "entity_id": "pubchem:280",
+      "language": "en",
+      "name": "carbon dioxide",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/280/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:936:iupac-en",
+      "entity_id": "pubchem:936",
+      "language": "en",
+      "name": "pyridine-3-carboxamide",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/936/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:750:iupac-en",
+      "entity_id": "pubchem:750",
+      "language": "en",
+      "name": "2-aminoacetic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/750/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:31272:iupac-en",
+      "entity_id": "pubchem:31272",
+      "language": "en",
+      "name": "butyl acetate",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/31272/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7590:iupac-en",
+      "entity_id": "pubchem:7590",
+      "language": "en",
+      "name": "ethyl 2-phenylacetate",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7590/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:6137:iupac-en",
+      "entity_id": "pubchem:6137",
+      "language": "en",
+      "name": "(2S)-2-amino-4-methylsulfanylbutanoic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6137/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7749:iupac-en",
+      "entity_id": "pubchem:7749",
+      "language": "en",
+      "name": "ethyl propanoate",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7749/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:6826:iupac-en",
+      "entity_id": "pubchem:6826",
+      "language": "en",
+      "name": "methyl 2-(methylamino)benzoate",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6826/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:240:iupac-en",
+      "entity_id": "pubchem:240",
+      "language": "en",
+      "name": "benzaldehyde",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/240/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:947:iupac-en",
+      "entity_id": "pubchem:947",
+      "language": "en",
+      "name": "molecular nitrogen",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/947/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5280445:iupac-en",
+      "entity_id": "pubchem:5280445",
+      "language": "en",
+      "name": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxychromen-4-one",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5280445/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5280863:iupac-en",
+      "entity_id": "pubchem:5280863",
+      "language": "en",
+      "name": "3,5,7-trihydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5280863/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5962:iupac-en",
+      "entity_id": "pubchem:5962",
+      "language": "en",
+      "name": "(2S)-2,6-diaminohexanoic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5962/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:1110:iupac-en",
+      "entity_id": "pubchem:1110",
+      "language": "en",
+      "name": "butanedioic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1110/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:8175:iupac-en",
+      "entity_id": "pubchem:8175",
+      "language": "en",
+      "name": "decanal",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8175/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7410:iupac-en",
+      "entity_id": "pubchem:7410",
+      "language": "en",
+      "name": "1-phenylethanone",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7410/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:24526:iupac-en",
+      "entity_id": "pubchem:24526",
+      "language": "en",
+      "name": "molecular chlorine",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/24526/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5280443:iupac-en",
+      "entity_id": "pubchem:5280443",
+      "language": "en",
+      "name": "5,7-dihydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5280443/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:1183:iupac-en",
+      "entity_id": "pubchem:1183",
+      "language": "en",
+      "name": "4-hydroxy-3-methoxybenzaldehyde",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1183/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:1004:iupac-en",
+      "entity_id": "pubchem:1004",
+      "language": "en",
+      "name": "phosphoric acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1004/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7762:iupac-en",
+      "entity_id": "pubchem:7762",
+      "language": "en",
+      "name": "ethyl butanoate",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7762/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:145742:iupac-en",
+      "entity_id": "pubchem:145742",
+      "language": "en",
+      "name": "(2S)-pyrrolidine-2-carboxylic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/145742/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:4133:iupac-en",
+      "entity_id": "pubchem:4133",
+      "language": "en",
+      "name": "methyl 2-hydroxybenzoate",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/4133/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:135398658:iupac-en",
+      "entity_id": "pubchem:135398658",
+      "language": "en",
+      "name": "(2S)-2-[[4-[(2-amino-4-oxo-3H-pteridin-6-yl)methylamino]benzoyl]amino]pentanedioic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/135398658/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7945:iupac-en",
+      "entity_id": "pubchem:7945",
+      "language": "en",
+      "name": "ethyl 3-methylbutanoate",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7945/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7795:iupac-en",
+      "entity_id": "pubchem:7795",
+      "language": "en",
+      "name": "3-methylbutyl butanoate",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7795/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:938:iupac-en",
+      "entity_id": "pubchem:938",
+      "language": "en",
+      "name": "pyridine-3-carboxylic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/938/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:222:iupac-en",
+      "entity_id": "pubchem:222",
+      "language": "en",
+      "name": "azane",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/222/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:6305:iupac-en",
+      "entity_id": "pubchem:6305",
+      "language": "en",
+      "name": "(2S)-2-amino-3-(1H-indol-3-yl)propanoic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6305/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5950:iupac-en",
+      "entity_id": "pubchem:5950",
+      "language": "en",
+      "name": "(2S)-2-aminopropanoic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5950/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:8048:iupac-en",
+      "entity_id": "pubchem:8048",
+      "language": "en",
+      "name": "ethyl decanoate",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8048/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:3314:iupac-en",
+      "entity_id": "pubchem:3314",
+      "language": "en",
+      "name": "2-methoxy-4-prop-2-enylphenol",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/3314/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:2519:iupac-en",
+      "entity_id": "pubchem:2519",
+      "language": "en",
+      "name": "1,3,7-trimethylpurine-2,6-dione",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/2519/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:31265:iupac-en",
+      "entity_id": "pubchem:31265",
+      "language": "en",
+      "name": "ethyl hexanoate",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/31265/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7797:iupac-en",
+      "entity_id": "pubchem:7797",
+      "language": "en",
+      "name": "ethyl heptanoate",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7797/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:8058:iupac-en",
+      "entity_id": "pubchem:8058",
+      "language": "en",
+      "name": "hexane",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8058/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:33032:iupac-en",
+      "entity_id": "pubchem:33032",
+      "language": "en",
+      "name": "(2S)-2-aminopentanedioic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/33032/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:243:iupac-en",
+      "entity_id": "pubchem:243",
+      "language": "en",
+      "name": "benzoic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/243/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:244:iupac-en",
+      "entity_id": "pubchem:244",
+      "language": "en",
+      "name": "phenylmethanol",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/244/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:8857:iupac-en",
+      "entity_id": "pubchem:8857",
+      "language": "en",
+      "name": "ethyl acetate",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8857/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:1123:iupac-en",
+      "entity_id": "pubchem:1123",
+      "language": "en",
+      "name": "2-aminoethanesulfonic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1123/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:8369:iupac-en",
+      "entity_id": "pubchem:8369",
+      "language": "en",
+      "name": "3-hydroxy-2-methylpyran-4-one",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8369/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7983:iupac-en",
+      "entity_id": "pubchem:7983",
+      "language": "en",
+      "name": "butyl butanoate",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7983/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5429:iupac-en",
+      "entity_id": "pubchem:5429",
+      "language": "en",
+      "name": "3,7-dimethylpurine-2,6-dione",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5429/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7799:iupac-en",
+      "entity_id": "pubchem:7799",
+      "language": "en",
+      "name": "ethyl octanoate",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7799/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5961:iupac-en",
+      "entity_id": "pubchem:5961",
+      "language": "en",
+      "name": "(2S)-2,5-diamino-5-oxopentanoic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5961/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:445639:iupac-en",
+      "entity_id": "pubchem:445639",
+      "language": "en",
+      "name": "(Z)-octadec-9-enoic acid",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/445639/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:4947:iupac-en",
+      "entity_id": "pubchem:4947",
+      "language": "en",
+      "name": "propyl 3,4,5-trihydroxybenzoate",
+      "name_type": "computed_systematic_name",
+      "label_status": "source_computed",
+      "official_korean_name_claim": false,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/4947/JSON?heading=Computed%20Descriptors"
+    }
+  ],
+  "identifier_links": [
+    {
+      "id": "pubchem:5281855:full-key",
+      "entity_id": "pubchem:5281855",
+      "identifier_namespace": "InChIKey",
+      "identifier": "AFSDNFLWKVMVRB-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5281855/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:6288:full-key",
+      "entity_id": "pubchem:6288",
+      "identifier_namespace": "InChIKey",
+      "identifier": "AYFVYJQAPQTCCC-GBXIJSLDSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6288/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:54670067:full-key",
+      "entity_id": "pubchem:54670067",
+      "identifier_namespace": "InChIKey",
+      "identifier": "CIWBSHSKHKDKBQ-JLAZNSOCSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/54670067/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5960:full-key",
+      "entity_id": "pubchem:5960",
+      "identifier_namespace": "InChIKey",
+      "identifier": "CKLJMWTZIZZHCS-REOHCLBHSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5960/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:180:full-key",
+      "entity_id": "pubchem:180",
+      "identifier_namespace": "InChIKey",
+      "identifier": "CSCPPACGZOOCGX-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/180/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:280:full-key",
+      "entity_id": "pubchem:280",
+      "identifier_namespace": "InChIKey",
+      "identifier": "CURLTUGMZLYLDI-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/280/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:936:full-key",
+      "entity_id": "pubchem:936",
+      "identifier_namespace": "InChIKey",
+      "identifier": "DFPAKSUCGFBDDF-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/936/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:750:full-key",
+      "entity_id": "pubchem:750",
+      "identifier_namespace": "InChIKey",
+      "identifier": "DHMQDGOQFOQNFH-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/750/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:31272:full-key",
+      "entity_id": "pubchem:31272",
+      "identifier_namespace": "InChIKey",
+      "identifier": "DKPFZGUDAPQIHT-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/31272/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7590:full-key",
+      "entity_id": "pubchem:7590",
+      "identifier_namespace": "InChIKey",
+      "identifier": "DULCUDSUACXJJC-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7590/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:6137:full-key",
+      "entity_id": "pubchem:6137",
+      "identifier_namespace": "InChIKey",
+      "identifier": "FFEARJCKVFRZRR-BYPYZUCNSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6137/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7749:full-key",
+      "entity_id": "pubchem:7749",
+      "identifier_namespace": "InChIKey",
+      "identifier": "FKRCODPIKNYEAC-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7749/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:6826:full-key",
+      "entity_id": "pubchem:6826",
+      "identifier_namespace": "InChIKey",
+      "identifier": "GVOWHGSUZUUUDR-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6826/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:240:full-key",
+      "entity_id": "pubchem:240",
+      "identifier_namespace": "InChIKey",
+      "identifier": "HUMNYLRZRPPJDN-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/240/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:947:full-key",
+      "entity_id": "pubchem:947",
+      "identifier_namespace": "InChIKey",
+      "identifier": "IJGRMHOSHXDMSA-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/947/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5280445:full-key",
+      "entity_id": "pubchem:5280445",
+      "identifier_namespace": "InChIKey",
+      "identifier": "IQPNAANSBPBGFQ-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5280445/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5280863:full-key",
+      "entity_id": "pubchem:5280863",
+      "identifier_namespace": "InChIKey",
+      "identifier": "IYRMWMYZSQPJKC-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5280863/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5962:full-key",
+      "entity_id": "pubchem:5962",
+      "identifier_namespace": "InChIKey",
+      "identifier": "KDXKERNSBIXSRK-YFKPBYRVSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5962/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:1110:full-key",
+      "entity_id": "pubchem:1110",
+      "identifier_namespace": "InChIKey",
+      "identifier": "KDYFGRWQOYBRFD-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1110/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:8175:full-key",
+      "entity_id": "pubchem:8175",
+      "identifier_namespace": "InChIKey",
+      "identifier": "KSMVZQYAVGTKIV-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8175/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7410:full-key",
+      "entity_id": "pubchem:7410",
+      "identifier_namespace": "InChIKey",
+      "identifier": "KWOLFJPFCHCOCG-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7410/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:24526:full-key",
+      "entity_id": "pubchem:24526",
+      "identifier_namespace": "InChIKey",
+      "identifier": "KZBUYRJDOAKODT-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/24526/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5280443:full-key",
+      "entity_id": "pubchem:5280443",
+      "identifier_namespace": "InChIKey",
+      "identifier": "KZNIFHPLKGYRTM-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5280443/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:1183:full-key",
+      "entity_id": "pubchem:1183",
+      "identifier_namespace": "InChIKey",
+      "identifier": "MWOOGOJBHIARFG-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1183/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:1004:full-key",
+      "entity_id": "pubchem:1004",
+      "identifier_namespace": "InChIKey",
+      "identifier": "NBIIXXVUZAFLBC-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1004/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7762:full-key",
+      "entity_id": "pubchem:7762",
+      "identifier_namespace": "InChIKey",
+      "identifier": "OBNCKNCVKJNDBV-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7762/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:145742:full-key",
+      "entity_id": "pubchem:145742",
+      "identifier_namespace": "InChIKey",
+      "identifier": "ONIBWKKTOPOVIA-BYPYZUCNSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/145742/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:4133:full-key",
+      "entity_id": "pubchem:4133",
+      "identifier_namespace": "InChIKey",
+      "identifier": "OSWPMRLSEDHDFF-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/4133/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:135398658:full-key",
+      "entity_id": "pubchem:135398658",
+      "identifier_namespace": "InChIKey",
+      "identifier": "OVBPIULPVIDEAO-LBPRGKRZSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/135398658/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7945:full-key",
+      "entity_id": "pubchem:7945",
+      "identifier_namespace": "InChIKey",
+      "identifier": "PPXUHEORWJQRHJ-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7945/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7795:full-key",
+      "entity_id": "pubchem:7795",
+      "identifier_namespace": "InChIKey",
+      "identifier": "PQLMXFQTAMDXIZ-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7795/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:938:full-key",
+      "entity_id": "pubchem:938",
+      "identifier_namespace": "InChIKey",
+      "identifier": "PVNIIMVLHYAWGP-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/938/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:222:full-key",
+      "entity_id": "pubchem:222",
+      "identifier_namespace": "InChIKey",
+      "identifier": "QGZKDVFQNNGYKY-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/222/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:6305:full-key",
+      "entity_id": "pubchem:6305",
+      "identifier_namespace": "InChIKey",
+      "identifier": "QIVBCDIJIAJPQS-VIFPVBQESA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6305/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5950:full-key",
+      "entity_id": "pubchem:5950",
+      "identifier_namespace": "InChIKey",
+      "identifier": "QNAYBMKLOCPYGJ-REOHCLBHSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5950/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:8048:full-key",
+      "entity_id": "pubchem:8048",
+      "identifier_namespace": "InChIKey",
+      "identifier": "RGXWDWUGBIJHDO-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8048/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:3314:full-key",
+      "entity_id": "pubchem:3314",
+      "identifier_namespace": "InChIKey",
+      "identifier": "RRAFCDWBNXTKKO-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/3314/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:2519:full-key",
+      "entity_id": "pubchem:2519",
+      "identifier_namespace": "InChIKey",
+      "identifier": "RYYVLZVUVIJVGH-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/2519/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:31265:full-key",
+      "entity_id": "pubchem:31265",
+      "identifier_namespace": "InChIKey",
+      "identifier": "SHZIWNPUGXLXDT-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/31265/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7797:full-key",
+      "entity_id": "pubchem:7797",
+      "identifier_namespace": "InChIKey",
+      "identifier": "TVQGDYNRXLTQAP-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7797/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:8058:full-key",
+      "entity_id": "pubchem:8058",
+      "identifier_namespace": "InChIKey",
+      "identifier": "VLKZOEOYAKHREP-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8058/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:33032:full-key",
+      "entity_id": "pubchem:33032",
+      "identifier_namespace": "InChIKey",
+      "identifier": "WHUUTDBJXJRKMK-VKHMYHEASA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/33032/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:243:full-key",
+      "entity_id": "pubchem:243",
+      "identifier_namespace": "InChIKey",
+      "identifier": "WPYMKLBDIGXBTP-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/243/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:244:full-key",
+      "entity_id": "pubchem:244",
+      "identifier_namespace": "InChIKey",
+      "identifier": "WVDDGKGOMKODPV-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/244/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:8857:full-key",
+      "entity_id": "pubchem:8857",
+      "identifier_namespace": "InChIKey",
+      "identifier": "XEKOWRVHYACXOJ-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8857/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:1123:full-key",
+      "entity_id": "pubchem:1123",
+      "identifier_namespace": "InChIKey",
+      "identifier": "XOAAWQZATWQOTB-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1123/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:8369:full-key",
+      "entity_id": "pubchem:8369",
+      "identifier_namespace": "InChIKey",
+      "identifier": "XPCTZQVDEJYUGT-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8369/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7983:full-key",
+      "entity_id": "pubchem:7983",
+      "identifier_namespace": "InChIKey",
+      "identifier": "XUPYJHCZDLZNFP-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7983/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5429:full-key",
+      "entity_id": "pubchem:5429",
+      "identifier_namespace": "InChIKey",
+      "identifier": "YAPQBXQYLJRXSA-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5429/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:7799:full-key",
+      "entity_id": "pubchem:7799",
+      "identifier_namespace": "InChIKey",
+      "identifier": "YYZUSRORWSJGET-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7799/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:5961:full-key",
+      "entity_id": "pubchem:5961",
+      "identifier_namespace": "InChIKey",
+      "identifier": "ZDXPYRJPNDTMRX-VKHMYHEASA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5961/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:445639:full-key",
+      "entity_id": "pubchem:445639",
+      "identifier_namespace": "InChIKey",
+      "identifier": "ZQPPMHVWECSIRJ-KTKRTIGZSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/445639/JSON?heading=Computed%20Descriptors"
+    },
+    {
+      "id": "pubchem:4947:full-key",
+      "entity_id": "pubchem:4947",
+      "identifier_namespace": "InChIKey",
+      "identifier": "ZTHYODDOHIVTJV-UHFFFAOYSA-N",
+      "method": "full_structure_key",
+      "match_status": "identity_verified",
+      "confidence_category": "computed_identity_evidence_complete",
+      "similarity_score": null,
+      "source_id": "pubchem-government-computed",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/4947/JSON?heading=Computed%20Descriptors"
+    }
+  ],
+  "foods": [],
+  "relationships": [],
+  "score_semantics": "No similarity scores or unreviewed candidates exported."
+}

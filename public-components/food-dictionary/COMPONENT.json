@@ -1,0 +1,8 @@
+{
+  "component": "food-dictionary",
+  "source_repository": null,
+  "origin_status": "standalone companion; do not infer a Git harness",
+  "code_license": "Apache-2.0 owned additions",
+  "public_runtime": "unverified",
+  "research_data_included": false
+}

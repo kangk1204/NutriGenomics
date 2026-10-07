@@ -1,0 +1,15 @@
+{
+  "scope": "Executed packaged public API and bounded synthetic contract tests; no training, model downloads or private-data rebuilds.",
+  "tests": {
+    "public_api_node": 19,
+    "integration_pytest": 30,
+    "food_quality_pytest": 36,
+    "food_dictionary_pytest": 23,
+    "selected_evidence_pytest": 40
+  },
+  "total_passed": 148,
+  "r_sources_parsed": 4,
+  "inference_runtime_verified": false,
+  "new_public_deployment_verified": false,
+  "not_run": "Full scientific suites requiring unavailable SciPy/scikit-learn/Torch/R dependencies or omitted private inputs; script-dependent tests excluded as manifest documents."
+}

@@ -1,0 +1,1256 @@
+{
+  "schema_version": "nutri-public-code-provenance-v2",
+  "hash_semantics": {
+    "upstream_source_sha256": "Frozen original bytes at the source commit, or null if no Git assertion.",
+    "reviewed_input_sha256": "Audited input bytes before public packaging; may contain correctness repairs.",
+    "distribution_sha256": "Actual bytes in this public distribution."
+  },
+  "excluded_script_test_paths": [
+    "compound-target/tests/test_chembl_endpoints.py",
+    "compound-target/tests/test_food_bridge.py",
+    "evidence/tests/test_bindingdb_endpoints.py",
+    "evidence/tests/test_literature_oom_retry.py",
+    "evidence/tests/test_literature_quote_grounding.py",
+    "evidence/tests/test_public_evidence_source.py",
+    "evidence/tests/test_qwen_continuation.py",
+    "intervention-atlas/tests/test_independent_replay.py",
+    "methylation/tests/test_endocrine_acquisition_receipts.py",
+    "methylation/tests/test_endocrine_output_audit.py",
+    "methylation/tests/test_endocrine_range_download.py",
+    "methylation/tests/test_endocrine_source_adapter.py",
+    "methylation/tests/test_sensitivity_annotations.py",
+    "methylation/tests/test_twins_source_adapter.py"
+  ],
+  "excluded_private_dictionary_rebuild_tests": 4,
+  "files": [
+    {
+      "path": "integration/src/nutriomics_final/__init__.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "8a7d94c3a4c087063bd534457318ef96fadb0fdc9362f3792c6595070fd1e61c",
+      "reviewed_input_sha256": "8a7d94c3a4c087063bd534457318ef96fadb0fdc9362f3792c6595070fd1e61c",
+      "upstream_source_sha256": "8a7d94c3a4c087063bd534457318ef96fadb0fdc9362f3792c6595070fd1e61c",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "integration/src/nutriomics_final/acceptance.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "43a77d11d3673061cbd57d66cc19596a49ffba0f5a9a12fbdb89cb9fc54594dd",
+      "reviewed_input_sha256": "43a77d11d3673061cbd57d66cc19596a49ffba0f5a9a12fbdb89cb9fc54594dd",
+      "upstream_source_sha256": "a89b0c9bf62d42a8f5665f351f174b8f73b8954baf72235db677bf0ab1b4b0c0",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    },
+    {
+      "path": "integration/src/nutriomics_final/api.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "e960d049c2752b6e7b63b4156f488a459416879b6f7d3ac92f7e1d867ee62ab4",
+      "reviewed_input_sha256": "e960d049c2752b6e7b63b4156f488a459416879b6f7d3ac92f7e1d867ee62ab4",
+      "upstream_source_sha256": "871744df42a0eeb26b5ecda1ac905dd837993c1acb6ea9c056f392dfc9a155b9",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    },
+    {
+      "path": "integration/src/nutriomics_final/cli.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "193db414d519e0eabf87203ca80456d813a7918393c15e79ce71751398b8a22f",
+      "reviewed_input_sha256": "193db414d519e0eabf87203ca80456d813a7918393c15e79ce71751398b8a22f",
+      "upstream_source_sha256": "193db414d519e0eabf87203ca80456d813a7918393c15e79ce71751398b8a22f",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "integration/src/nutriomics_final/dispatch.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "971bebac3409104947d4772356ee921299007ab45653b0b08ca8c6121523e09c",
+      "reviewed_input_sha256": "971bebac3409104947d4772356ee921299007ab45653b0b08ca8c6121523e09c",
+      "upstream_source_sha256": "971bebac3409104947d4772356ee921299007ab45653b0b08ca8c6121523e09c",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "integration/src/nutriomics_final/food_registry.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "366c24011dc7ab48a9df411ace3dc32f5869ea654255e38ef7f671edc3418884",
+      "reviewed_input_sha256": "366c24011dc7ab48a9df411ace3dc32f5869ea654255e38ef7f671edc3418884",
+      "upstream_source_sha256": "366c24011dc7ab48a9df411ace3dc32f5869ea654255e38ef7f671edc3418884",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "integration/src/nutriomics_final/image_candidates.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "b6d7b6f3adc602a41b050939fec2b6401e9ff2509996fe3791989f418e35fcc5",
+      "reviewed_input_sha256": "b6d7b6f3adc602a41b050939fec2b6401e9ff2509996fe3791989f418e35fcc5",
+      "upstream_source_sha256": "cf8a37be7f1868929922e7623d9a9998dfbdcde88cceabd13017c50a4d899f2e",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    },
+    {
+      "path": "integration/src/nutriomics_final/jobs.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "2189b9dbc867b5169157f90906afd242ea208777b652bc4ac6d5db049de7fa61",
+      "reviewed_input_sha256": "2189b9dbc867b5169157f90906afd242ea208777b652bc4ac6d5db049de7fa61",
+      "upstream_source_sha256": "c17f00378f7a21f2db976058e834bd70210d328f7d11b69b68c25c1ef68279cc",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    },
+    {
+      "path": "integration/src/nutriomics_final/protocols.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "8e61051356edae68fcce9398f5a91e193156cbca4405ed9fb00c3ed4ff0641bf",
+      "reviewed_input_sha256": "8e61051356edae68fcce9398f5a91e193156cbca4405ed9fb00c3ed4ff0641bf",
+      "upstream_source_sha256": "a8b1cfe8f28cacb9be45c683e7a809b9c45d7d56033e9545490d0fef9f51502d",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    },
+    {
+      "path": "integration/src/nutriomics_final/research_registry.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "47bcabf0c31e2deaaeb7993479b9f1d2bf2177fda25566cd6f93ed8fbfdee34a",
+      "reviewed_input_sha256": "47bcabf0c31e2deaaeb7993479b9f1d2bf2177fda25566cd6f93ed8fbfdee34a",
+      "upstream_source_sha256": "6eda15f2ba3ea5cb249a6bb931c6fd97f852b07afd23756896207c077371a0d5",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    },
+    {
+      "path": "integration/pyproject.toml",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "013ad921f6c582024258ee9f413b3d23afb1de10acbf84d078f3b62bccaafd5f",
+      "reviewed_input_sha256": "f21e01c7e94b102aff137b293dfd5146b6404fd082a996c34ecead7b81c58fbe",
+      "upstream_source_sha256": "f21e01c7e94b102aff137b293dfd5146b6404fd082a996c34ecead7b81c58fbe",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Public distribution packaging adjustment; see NOTICE.md."
+      ]
+    },
+    {
+      "path": "integration/tests/test_acceptance.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "90ed08ef275dac8e33dc6fd91c418bdbc1d1f45b507494c239c871fe4f69c1be",
+      "reviewed_input_sha256": "90ed08ef275dac8e33dc6fd91c418bdbc1d1f45b507494c239c871fe4f69c1be",
+      "upstream_source_sha256": "ef8ca47b023c703c33e02de0e254869a4ba5d7186f20cf399270249b28d4e66e",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    },
+    {
+      "path": "integration/tests/test_food_registry.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "3e478a8494b33a06d544eceffd8500a3dd8effd9aa95f093a0e3e4b500c4a3d0",
+      "reviewed_input_sha256": "3e478a8494b33a06d544eceffd8500a3dd8effd9aa95f093a0e3e4b500c4a3d0",
+      "upstream_source_sha256": "3e478a8494b33a06d544eceffd8500a3dd8effd9aa95f093a0e3e4b500c4a3d0",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "integration/tests/test_image_candidates.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "d322bf89553d4f908d0e1820c77dd40b372d2bfc2ea07009c6896538ce1c527f",
+      "reviewed_input_sha256": "d322bf89553d4f908d0e1820c77dd40b372d2bfc2ea07009c6896538ce1c527f",
+      "upstream_source_sha256": "d322bf89553d4f908d0e1820c77dd40b372d2bfc2ea07009c6896538ce1c527f",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "integration/tests/test_jobs.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "740599ecb0e9221245a74ecb510b920745b044292b4d2d4223b9a1112d908401",
+      "reviewed_input_sha256": "740599ecb0e9221245a74ecb510b920745b044292b4d2d4223b9a1112d908401",
+      "upstream_source_sha256": "772d071b3ab4671c652cbf6e114e4014668754a6c2b8e89888c943cb04bf933e",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    },
+    {
+      "path": "integration/tests/test_literature_api.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "7e6812bc4f6f6f8a6ab6fc427d4536f29355dc0614b5dc5119392f74a50e9b3b",
+      "reviewed_input_sha256": "ee851a3e832a8a5afe23d17affdadb134a4aea7bf1332e1929acf444dea163cf",
+      "upstream_source_sha256": "ee851a3e832a8a5afe23d17affdadb134a4aea7bf1332e1929acf444dea163cf",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Public distribution packaging adjustment; see NOTICE.md."
+      ]
+    },
+    {
+      "path": "integration/tests/test_methylation_job_isolation.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "2debb4aea8d1684277e23f0f9fb98f22618ff112fdd6c6c0e2d335a264b6ef41",
+      "reviewed_input_sha256": "2debb4aea8d1684277e23f0f9fb98f22618ff112fdd6c6c0e2d335a264b6ef41",
+      "upstream_source_sha256": "2debb4aea8d1684277e23f0f9fb98f22618ff112fdd6c6c0e2d335a264b6ef41",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "integration/tests/test_research_registry.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "distribution_sha256": "80a72ab218a8576ba8f858f41dd9b0a68ebfadb68ad2e07b286bb1ad300be6e8",
+      "reviewed_input_sha256": "80a72ab218a8576ba8f858f41dd9b0a68ebfadb68ad2e07b286bb1ad300be6e8",
+      "upstream_source_sha256": "80a72ab218a8576ba8f858f41dd9b0a68ebfadb68ad2e07b286bb1ad300be6e8",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/__init__.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "dd44ca4dc54f2b15f012845a4165a602499a78d63449ea5cdda3a12b906e0de9",
+      "reviewed_input_sha256": "dd44ca4dc54f2b15f012845a4165a602499a78d63449ea5cdda3a12b906e0de9",
+      "upstream_source_sha256": "dd44ca4dc54f2b15f012845a4165a602499a78d63449ea5cdda3a12b906e0de9",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/__main__.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "7318f4523e93c7af0322e04cc18bf9181cac194f12ae814cbe2c46c9014dbf49",
+      "reviewed_input_sha256": "7318f4523e93c7af0322e04cc18bf9181cac194f12ae814cbe2c46c9014dbf49",
+      "upstream_source_sha256": "7318f4523e93c7af0322e04cc18bf9181cac194f12ae814cbe2c46c9014dbf49",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/audit.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "1edbc9a2900f476f5a7d4a9d1c08b7d38f366853aa0c6d75a4951fdae74ec306",
+      "reviewed_input_sha256": "1edbc9a2900f476f5a7d4a9d1c08b7d38f366853aa0c6d75a4951fdae74ec306",
+      "upstream_source_sha256": "1edbc9a2900f476f5a7d4a9d1c08b7d38f366853aa0c6d75a4951fdae74ec306",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/cli.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "2288dcbcddaeb4f2f970225ac0cec1c003a9209198ebbd681f1ddbad5e802272",
+      "reviewed_input_sha256": "2288dcbcddaeb4f2f970225ac0cec1c003a9209198ebbd681f1ddbad5e802272",
+      "upstream_source_sha256": "2288dcbcddaeb4f2f970225ac0cec1c003a9209198ebbd681f1ddbad5e802272",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/ctd.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "68326e2ff94be1afea15e77fe52a337665e91e3b3abb573639fd818a6dadcea0",
+      "reviewed_input_sha256": "68326e2ff94be1afea15e77fe52a337665e91e3b3abb573639fd818a6dadcea0",
+      "upstream_source_sha256": "68326e2ff94be1afea15e77fe52a337665e91e3b3abb573639fd818a6dadcea0",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/extraction.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "76ca452bc17d9b6f3bbebbc9a05bfea834fb275a10de183ecef573ac1caf34b5",
+      "reviewed_input_sha256": "76ca452bc17d9b6f3bbebbc9a05bfea834fb275a10de183ecef573ac1caf34b5",
+      "upstream_source_sha256": "76ca452bc17d9b6f3bbebbc9a05bfea834fb275a10de183ecef573ac1caf34b5",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/food.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "0ff098c49d4c814e5e5c8fc3d5c254f1fe7077cf3e53950348f8ec620e38cf19",
+      "reviewed_input_sha256": "0ff098c49d4c814e5e5c8fc3d5c254f1fe7077cf3e53950348f8ec620e38cf19",
+      "upstream_source_sha256": "0ff098c49d4c814e5e5c8fc3d5c254f1fe7077cf3e53950348f8ec620e38cf19",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/food_compound_extension.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "598a8d65c0189efc3bab77ec5cf3b59019d0eaf0f3ac2af0b6c2c2513980f722",
+      "reviewed_input_sha256": "598a8d65c0189efc3bab77ec5cf3b59019d0eaf0f3ac2af0b6c2c2513980f722",
+      "upstream_source_sha256": "598a8d65c0189efc3bab77ec5cf3b59019d0eaf0f3ac2af0b6c2c2513980f722",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/graph.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "9d0a1c8ee85ff34b16d4a4229b3efbf0987ff1b0301ffaf6ed72cf13653ef2ad",
+      "reviewed_input_sha256": "9d0a1c8ee85ff34b16d4a4229b3efbf0987ff1b0301ffaf6ed72cf13653ef2ad",
+      "upstream_source_sha256": "9d0a1c8ee85ff34b16d4a4229b3efbf0987ff1b0301ffaf6ed72cf13653ef2ad",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/graph_bridge.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "6ade5e629e988eebf6f75d8df9b893f9461dc985416ee4c7c7239793ba47f908",
+      "reviewed_input_sha256": "6ade5e629e988eebf6f75d8df9b893f9461dc985416ee4c7c7239793ba47f908",
+      "upstream_source_sha256": "6ade5e629e988eebf6f75d8df9b893f9461dc985416ee4c7c7239793ba47f908",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/identity.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "e0e8c809648f57c379a8d88500f140e31624c1fc4c64fe70c0c040979a9daace",
+      "reviewed_input_sha256": "e0e8c809648f57c379a8d88500f140e31624c1fc4c64fe70c0c040979a9daace",
+      "upstream_source_sha256": "e0e8c809648f57c379a8d88500f140e31624c1fc4c64fe70c0c040979a9daace",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/literature.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "45ed2ddfe3c415c56f8cb795024f9e0fd864b80e9f54f6865bbf93259b0b810f",
+      "reviewed_input_sha256": "45ed2ddfe3c415c56f8cb795024f9e0fd864b80e9f54f6865bbf93259b0b810f",
+      "upstream_source_sha256": "a176083572d1fd630f3bbbf5fa46e21f41ad840be97906d34bf6560f6b16165b",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/literature_bridge.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "9714d6bb1d41cb61f6156775f7536283f9cdc73f058cb5c856f6fa0790827e2b",
+      "reviewed_input_sha256": "9714d6bb1d41cb61f6156775f7536283f9cdc73f058cb5c856f6fa0790827e2b",
+      "upstream_source_sha256": "9714d6bb1d41cb61f6156775f7536283f9cdc73f058cb5c856f6fa0790827e2b",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/neural_data.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "8d7da01391d63a513034e734a5224c3057cfc615c9cd9740f1ab1d07107ca5ef",
+      "reviewed_input_sha256": "8d7da01391d63a513034e734a5224c3057cfc615c9cd9740f1ab1d07107ca5ef",
+      "upstream_source_sha256": "8d7da01391d63a513034e734a5224c3057cfc615c9cd9740f1ab1d07107ca5ef",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/neural_inference.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "6564ff7ad4aa921c2bff1fc0a2c4b479c253df79b52978dd09adeb6cbd7c27b8",
+      "reviewed_input_sha256": "6564ff7ad4aa921c2bff1fc0a2c4b479c253df79b52978dd09adeb6cbd7c27b8",
+      "upstream_source_sha256": "dff86bc8a6894bbf490d45b9652eddaf5ada5d99463b923cf6fb464d1eb5918a",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/neural_ner.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "06a26c236d68610dddbe9e302027d3d6d6e5cc7cc633e1e003475c1d2a1c872f",
+      "reviewed_input_sha256": "06a26c236d68610dddbe9e302027d3d6d6e5cc7cc633e1e003475c1d2a1c872f",
+      "upstream_source_sha256": "06a26c236d68610dddbe9e302027d3d6d6e5cc7cc633e1e003475c1d2a1c872f",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/public_expansion.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "dcceaf8f9e1c35e935a11cc060a95a12d659d6d541b498c93ddb0d4ae65d92e8",
+      "reviewed_input_sha256": "dcceaf8f9e1c35e935a11cc060a95a12d659d6d541b498c93ddb0d4ae65d92e8",
+      "upstream_source_sha256": "dcceaf8f9e1c35e935a11cc060a95a12d659d6d541b498c93ddb0d4ae65d92e8",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/quote_grounding.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "ad9b9167d5a7029b2e44c3f8c23daae97d15fda79c67c5994577cf4048339ed5",
+      "reviewed_input_sha256": "ad9b9167d5a7029b2e44c3f8c23daae97d15fda79c67c5994577cf4048339ed5",
+      "upstream_source_sha256": "ad9b9167d5a7029b2e44c3f8c23daae97d15fda79c67c5994577cf4048339ed5",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/sources.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "c0440477f38dfc7fdf4a47f783fc259f1a4b93f03f102b59ca5066cf55603b85",
+      "reviewed_input_sha256": "c0440477f38dfc7fdf4a47f783fc259f1a4b93f03f102b59ca5066cf55603b85",
+      "upstream_source_sha256": "c0440477f38dfc7fdf4a47f783fc259f1a4b93f03f102b59ca5066cf55603b85",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/supervised_relations.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "1c93e1b141bf86570c0f60f27f441676d75b798c8760e14d475bb30558915452",
+      "reviewed_input_sha256": "1c93e1b141bf86570c0f60f27f441676d75b798c8760e14d475bb30558915452",
+      "upstream_source_sha256": "1c93e1b141bf86570c0f60f27f441676d75b798c8760e14d475bb30558915452",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/src/nutriomics_evidence/token_evaluation.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "84e34bc81516b3f4cdc9a2bed5e81e8dd55ea593ebdf1dfc42f9830fe3520d9a",
+      "reviewed_input_sha256": "84e34bc81516b3f4cdc9a2bed5e81e8dd55ea593ebdf1dfc42f9830fe3520d9a",
+      "upstream_source_sha256": "84e34bc81516b3f4cdc9a2bed5e81e8dd55ea593ebdf1dfc42f9830fe3520d9a",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/pyproject.toml",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "de982ee5e2cbb135945574e3fc215a506f902da93160aaadf8e1288a04a9dff2",
+      "reviewed_input_sha256": "de982ee5e2cbb135945574e3fc215a506f902da93160aaadf8e1288a04a9dff2",
+      "upstream_source_sha256": "de982ee5e2cbb135945574e3fc215a506f902da93160aaadf8e1288a04a9dff2",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/tests/test_ctd_graph.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "8a8a8b4c8617982e0199bdda0aaae90d1d720ca57318261983b5d8b18111be40",
+      "reviewed_input_sha256": "8a8a8b4c8617982e0199bdda0aaae90d1d720ca57318261983b5d8b18111be40",
+      "upstream_source_sha256": "8a8a8b4c8617982e0199bdda0aaae90d1d720ca57318261983b5d8b18111be40",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/tests/test_drugprot_native.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "af8adf73a39ad84c5e58e76a99e3fb6516685501a2b84a27ac3416ebe3068f67",
+      "reviewed_input_sha256": "af8adf73a39ad84c5e58e76a99e3fb6516685501a2b84a27ac3416ebe3068f67",
+      "upstream_source_sha256": "af8adf73a39ad84c5e58e76a99e3fb6516685501a2b84a27ac3416ebe3068f67",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/tests/test_extraction.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "1ba51a05e2bf9f1a09193710b2857e5ce97942ef366fca957f6e897b34be2756",
+      "reviewed_input_sha256": "1ba51a05e2bf9f1a09193710b2857e5ce97942ef366fca957f6e897b34be2756",
+      "upstream_source_sha256": "1ba51a05e2bf9f1a09193710b2857e5ce97942ef366fca957f6e897b34be2756",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/tests/test_fdc_anomaly.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "082da1477ab3949e13bd7958c7a9e2c7add0e3a6bf24fc5d8522f1c027154c9d",
+      "reviewed_input_sha256": "082da1477ab3949e13bd7958c7a9e2c7add0e3a6bf24fc5d8522f1c027154c9d",
+      "upstream_source_sha256": "082da1477ab3949e13bd7958c7a9e2c7add0e3a6bf24fc5d8522f1c027154c9d",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/tests/test_food_compound_extension.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "8df11c8e4064df550ea67b89ab390509ab07b980e316069f8a3239f3867c712f",
+      "reviewed_input_sha256": "8df11c8e4064df550ea67b89ab390509ab07b980e316069f8a3239f3867c712f",
+      "upstream_source_sha256": "8df11c8e4064df550ea67b89ab390509ab07b980e316069f8a3239f3867c712f",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/tests/test_food_identity.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "3eb199101f35cd83bf497e6d64dbcd799c031a4ac3b7e18e9666c370285ce7f9",
+      "reviewed_input_sha256": "3eb199101f35cd83bf497e6d64dbcd799c031a4ac3b7e18e9666c370285ce7f9",
+      "upstream_source_sha256": "3eb199101f35cd83bf497e6d64dbcd799c031a4ac3b7e18e9666c370285ce7f9",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/tests/test_graph_bridge.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "4666e41c8b4ecdb26abe57756cf79e305367d6bb47e6e8631a651f46956edcb2",
+      "reviewed_input_sha256": "4666e41c8b4ecdb26abe57756cf79e305367d6bb47e6e8631a651f46956edcb2",
+      "upstream_source_sha256": "4666e41c8b4ecdb26abe57756cf79e305367d6bb47e6e8631a651f46956edcb2",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/tests/test_literature.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "3da11126f3b534ca73e5fbc13a7085433080c0ab73bd77676e031a42ff4125ae",
+      "reviewed_input_sha256": "3da11126f3b534ca73e5fbc13a7085433080c0ab73bd77676e031a42ff4125ae",
+      "upstream_source_sha256": "5026672e0c7edf46d07c452751bc9c8713e63be3d852c8db4a772e73bcc964a6",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    },
+    {
+      "path": "evidence/tests/test_literature_bridge.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "9e625c9d40c59eb92d2bbaf26f634f067db99ba47af763a3e768e70644672409",
+      "reviewed_input_sha256": "9e625c9d40c59eb92d2bbaf26f634f067db99ba47af763a3e768e70644672409",
+      "upstream_source_sha256": "9e625c9d40c59eb92d2bbaf26f634f067db99ba47af763a3e768e70644672409",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/tests/test_neural_data.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "80162ad1aa066374fc8889637a466c4ff1f9cf559f0d06c85c2ef4e45444cd73",
+      "reviewed_input_sha256": "80162ad1aa066374fc8889637a466c4ff1f9cf559f0d06c85c2ef4e45444cd73",
+      "upstream_source_sha256": "80162ad1aa066374fc8889637a466c4ff1f9cf559f0d06c85c2ef4e45444cd73",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/tests/test_neural_ner.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "60a10fa65f89bda66c36e04d441f9acf866a0fca53e845feb1fe4feef61778ce",
+      "reviewed_input_sha256": "60a10fa65f89bda66c36e04d441f9acf866a0fca53e845feb1fe4feef61778ce",
+      "upstream_source_sha256": "60a10fa65f89bda66c36e04d441f9acf866a0fca53e845feb1fe4feef61778ce",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/tests/test_public_expansion.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "f53a1e1ce09177bcff4b79cb582ec72818b95ad76c39226bd8e1d7e2e3639dde",
+      "reviewed_input_sha256": "f53a1e1ce09177bcff4b79cb582ec72818b95ad76c39226bd8e1d7e2e3639dde",
+      "upstream_source_sha256": "f53a1e1ce09177bcff4b79cb582ec72818b95ad76c39226bd8e1d7e2e3639dde",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/tests/test_quote_grounding.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "88b279145d0ecce79240dac2be13e3d55bf0e063857653d6097d2c33bb86a7f8",
+      "reviewed_input_sha256": "88b279145d0ecce79240dac2be13e3d55bf0e063857653d6097d2c33bb86a7f8",
+      "upstream_source_sha256": "88b279145d0ecce79240dac2be13e3d55bf0e063857653d6097d2c33bb86a7f8",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/tests/test_structure_coverage.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "7cae57fa6cfbef738ad02be2544f4ac90316580eeede99fa1e87f9bf8ad3e74e",
+      "reviewed_input_sha256": "7cae57fa6cfbef738ad02be2544f4ac90316580eeede99fa1e87f9bf8ad3e74e",
+      "upstream_source_sha256": "7cae57fa6cfbef738ad02be2544f4ac90316580eeede99fa1e87f9bf8ad3e74e",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/tests/test_supervised_relations.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "da746d255243d98d94851300cba3560351dde3aef24d735622913c2c9e99dac8",
+      "reviewed_input_sha256": "da746d255243d98d94851300cba3560351dde3aef24d735622913c2c9e99dac8",
+      "upstream_source_sha256": "da746d255243d98d94851300cba3560351dde3aef24d735622913c2c9e99dac8",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "evidence/tests/test_token_evaluation.py",
+      "source_repository": "kangk1204/nutriomics-evidence-engine@7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "distribution_sha256": "a70ae045d7f0dbcd70160ea53ec52c93ddbf48ada6f8eea07ff7e7a497bc0f60",
+      "reviewed_input_sha256": "a70ae045d7f0dbcd70160ea53ec52c93ddbf48ada6f8eea07ff7e7a497bc0f60",
+      "upstream_source_sha256": "a70ae045d7f0dbcd70160ea53ec52c93ddbf48ada6f8eea07ff7e7a497bc0f60",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "methylation/src/nutriomics_methylation/__init__.py",
+      "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
+      "distribution_sha256": "4d30b3ea9acf8ede5a30402c1bde0a81b5aa2123a58b2ef01fb6346a4ca11976",
+      "reviewed_input_sha256": "4d30b3ea9acf8ede5a30402c1bde0a81b5aa2123a58b2ef01fb6346a4ca11976",
+      "upstream_source_sha256": "4d30b3ea9acf8ede5a30402c1bde0a81b5aa2123a58b2ef01fb6346a4ca11976",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "methylation/src/nutriomics_methylation/chronic.py",
+      "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
+      "distribution_sha256": "22123f43b7c4e94a2b22795f4a9a19822addbb2642367c5386ef25d044536c83",
+      "reviewed_input_sha256": "22123f43b7c4e94a2b22795f4a9a19822addbb2642367c5386ef25d044536c83",
+      "upstream_source_sha256": "22123f43b7c4e94a2b22795f4a9a19822addbb2642367c5386ef25d044536c83",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "methylation/src/nutriomics_methylation/cli.py",
+      "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
+      "distribution_sha256": "4e78b6fb3b43c2930778454022649b4845f444901ae38e62fd0c011968cd4973",
+      "reviewed_input_sha256": "4e78b6fb3b43c2930778454022649b4845f444901ae38e62fd0c011968cd4973",
+      "upstream_source_sha256": "4e78b6fb3b43c2930778454022649b4845f444901ae38e62fd0c011968cd4973",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "methylation/src/nutriomics_methylation/evaluation.py",
+      "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
+      "distribution_sha256": "2db1e93ee1a2190e55560de637831da148daddd8ea55212c78a0b901bac514fd",
+      "reviewed_input_sha256": "2db1e93ee1a2190e55560de637831da148daddd8ea55212c78a0b901bac514fd",
+      "upstream_source_sha256": "e2a5caab7546ef46e9d2adddee890c4616ebf6f37add007b4f144cdce28e980e",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    },
+    {
+      "path": "methylation/src/nutriomics_methylation/extension_grid.py",
+      "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
+      "distribution_sha256": "6125384bf756c96661dec082cd2728772d255294c5432ac0e16a30b6dce9abe5",
+      "reviewed_input_sha256": "6125384bf756c96661dec082cd2728772d255294c5432ac0e16a30b6dce9abe5",
+      "upstream_source_sha256": "6125384bf756c96661dec082cd2728772d255294c5432ac0e16a30b6dce9abe5",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "methylation/src/nutriomics_methylation/genoa.py",
+      "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
+      "distribution_sha256": "9024f670ea5985aff3d40f1035557290f5c62401da474c5a7d65413bf4b407a8",
+      "reviewed_input_sha256": "9024f670ea5985aff3d40f1035557290f5c62401da474c5a7d65413bf4b407a8",
+      "upstream_source_sha256": "9024f670ea5985aff3d40f1035557290f5c62401da474c5a7d65413bf4b407a8",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "methylation/src/nutriomics_methylation/io.py",
+      "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
+      "distribution_sha256": "3b567582b97d3b6fa778d75130825af4aebd79d17cb938b5a1c99bad4c71c337",
+      "reviewed_input_sha256": "3b567582b97d3b6fa778d75130825af4aebd79d17cb938b5a1c99bad4c71c337",
+      "upstream_source_sha256": "3b567582b97d3b6fa778d75130825af4aebd79d17cb938b5a1c99bad4c71c337",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "methylation/src/nutriomics_methylation/model.py",
+      "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
+      "distribution_sha256": "82f1c985de8d75b1997b7697a3e4341c6dd106f8be34d4c75b14042f8e9cc5b6",
+      "reviewed_input_sha256": "82f1c985de8d75b1997b7697a3e4341c6dd106f8be34d4c75b14042f8e9cc5b6",
+      "upstream_source_sha256": "82f1c985de8d75b1997b7697a3e4341c6dd106f8be34d4c75b14042f8e9cc5b6",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "methylation/src/nutriomics_methylation/transfer.py",
+      "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
+      "distribution_sha256": "3223edcd72b5fa1376de88ad23f7ed46ba4a3e9008ff9070b839aaf8f8d3883a",
+      "reviewed_input_sha256": "3223edcd72b5fa1376de88ad23f7ed46ba4a3e9008ff9070b839aaf8f8d3883a",
+      "upstream_source_sha256": "3223edcd72b5fa1376de88ad23f7ed46ba4a3e9008ff9070b839aaf8f8d3883a",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "methylation/pyproject.toml",
+      "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
+      "distribution_sha256": "1879c37c2e7ff4318a78c4e2556375b08a85d9de70b9a5595f8724dd44c8deb3",
+      "reviewed_input_sha256": "1879c37c2e7ff4318a78c4e2556375b08a85d9de70b9a5595f8724dd44c8deb3",
+      "upstream_source_sha256": "1879c37c2e7ff4318a78c4e2556375b08a85d9de70b9a5595f8724dd44c8deb3",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "methylation/tests/test_boundaries.py",
+      "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
+      "distribution_sha256": "08bf409be7f623e977e1dfe5a632dde09e1c41bc56d546b8d8dbd91b4a4768e9",
+      "reviewed_input_sha256": "08bf409be7f623e977e1dfe5a632dde09e1c41bc56d546b8d8dbd91b4a4768e9",
+      "upstream_source_sha256": "08bf409be7f623e977e1dfe5a632dde09e1c41bc56d546b8d8dbd91b4a4768e9",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "methylation/tests/test_chronic.py",
+      "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
+      "distribution_sha256": "c3196f0d063374f012ee122fd82fe6781aa5c5306ae68707eabd568840f9b068",
+      "reviewed_input_sha256": "c3196f0d063374f012ee122fd82fe6781aa5c5306ae68707eabd568840f9b068",
+      "upstream_source_sha256": "c3196f0d063374f012ee122fd82fe6781aa5c5306ae68707eabd568840f9b068",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "methylation/tests/test_extension_grid.py",
+      "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
+      "distribution_sha256": "d223f03d243546e45f183d9168a43b196d380496ed867e54a49f6cc09ae7a33c",
+      "reviewed_input_sha256": "d223f03d243546e45f183d9168a43b196d380496ed867e54a49f6cc09ae7a33c",
+      "upstream_source_sha256": "d223f03d243546e45f183d9168a43b196d380496ed867e54a49f6cc09ae7a33c",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "methylation/tests/test_genoa.py",
+      "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
+      "distribution_sha256": "11195c8ab86648966c8d9d397a4179d1b7c55e32789446f488a198c0c42d0cab",
+      "reviewed_input_sha256": "11195c8ab86648966c8d9d397a4179d1b7c55e32789446f488a198c0c42d0cab",
+      "upstream_source_sha256": "11195c8ab86648966c8d9d397a4179d1b7c55e32789446f488a198c0c42d0cab",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "methylation/tests/test_transfer.py",
+      "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
+      "distribution_sha256": "eb499c263450d5fd9beb65f4045bc6880f8aa17faa9083fd70428c2d6573dd3f",
+      "reviewed_input_sha256": "eb499c263450d5fd9beb65f4045bc6880f8aa17faa9083fd70428c2d6573dd3f",
+      "upstream_source_sha256": "eb499c263450d5fd9beb65f4045bc6880f8aa17faa9083fd70428c2d6573dd3f",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/src/nutriomics_atlas/__init__.py",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "9cc673adaf1d8d3576b3a2ac97485ac5ec193cbc9947be6bb526c2ecaf68d51d",
+      "reviewed_input_sha256": "9cc673adaf1d8d3576b3a2ac97485ac5ec193cbc9947be6bb526c2ecaf68d51d",
+      "upstream_source_sha256": "9cc673adaf1d8d3576b3a2ac97485ac5ec193cbc9947be6bb526c2ecaf68d51d",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/src/nutriomics_atlas/__main__.py",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "7225097a5dc4f99152ba1dc5324ed73d5ee09508cbc5268fa3b1114905340036",
+      "reviewed_input_sha256": "7225097a5dc4f99152ba1dc5324ed73d5ee09508cbc5268fa3b1114905340036",
+      "upstream_source_sha256": "7225097a5dc4f99152ba1dc5324ed73d5ee09508cbc5268fa3b1114905340036",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/src/nutriomics_atlas/cli.py",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "2efca513b414d226370c0d6ccc9597d6dfa473ab05386a6a69906a04a9995ef3",
+      "reviewed_input_sha256": "2efca513b414d226370c0d6ccc9597d6dfa473ab05386a6a69906a04a9995ef3",
+      "upstream_source_sha256": "2efca513b414d226370c0d6ccc9597d6dfa473ab05386a6a69906a04a9995ef3",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/src/nutriomics_atlas/counts.py",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "3fabadb7444d18f0b0baf29bf92e11e48376fcb9f1ecaf36c6d84d96e9236693",
+      "reviewed_input_sha256": "3fabadb7444d18f0b0baf29bf92e11e48376fcb9f1ecaf36c6d84d96e9236693",
+      "upstream_source_sha256": "3fabadb7444d18f0b0baf29bf92e11e48376fcb9f1ecaf36c6d84d96e9236693",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/src/nutriomics_atlas/download.py",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "c8f24f5ba73b1f1f5c679269347e5d98300358e21a8f2d6e7096a15370a5a9d2",
+      "reviewed_input_sha256": "c8f24f5ba73b1f1f5c679269347e5d98300358e21a8f2d6e7096a15370a5a9d2",
+      "upstream_source_sha256": "c8f24f5ba73b1f1f5c679269347e5d98300358e21a8f2d6e7096a15370a5a9d2",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/src/nutriomics_atlas/geo.py",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "b19095bd4ecc576b333a0e7e90e7f78c2a1b30a36d5e2b22ea34f06c8f10c0ae",
+      "reviewed_input_sha256": "b19095bd4ecc576b333a0e7e90e7f78c2a1b30a36d5e2b22ea34f06c8f10c0ae",
+      "upstream_source_sha256": "b19095bd4ecc576b333a0e7e90e7f78c2a1b30a36d5e2b22ea34f06c8f10c0ae",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/src/nutriomics_atlas/inventory.py",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "2636b6535de334de61ab39b2d101a7e46bdfac42abde5b05f0715c5b742f4212",
+      "reviewed_input_sha256": "2636b6535de334de61ab39b2d101a7e46bdfac42abde5b05f0715c5b742f4212",
+      "upstream_source_sha256": "2636b6535de334de61ab39b2d101a7e46bdfac42abde5b05f0715c5b742f4212",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/src/nutriomics_atlas/metabolomics.py",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "b140c24fff97f45b92b9bd9b409da0c45e02d33a4e74516baa818df0a82711ea",
+      "reviewed_input_sha256": "b140c24fff97f45b92b9bd9b409da0c45e02d33a4e74516baa818df0a82711ea",
+      "upstream_source_sha256": "b140c24fff97f45b92b9bd9b409da0c45e02d33a4e74516baa818df0a82711ea",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/src/nutriomics_atlas/provenance.py",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "a55a3605d2d0544c884104199e58fefb765f237b5cd17a8e2a4b3f8c2f5c77c3",
+      "reviewed_input_sha256": "a55a3605d2d0544c884104199e58fefb765f237b5cd17a8e2a4b3f8c2f5c77c3",
+      "upstream_source_sha256": "a55a3605d2d0544c884104199e58fefb765f237b5cd17a8e2a4b3f8c2f5c77c3",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/src/nutriomics_atlas/runner.py",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "5aa2e07cdfbf88ca68f289ed2fde47bbad25fe5e0c1736b5c9feb031960df5a0",
+      "reviewed_input_sha256": "5aa2e07cdfbf88ca68f289ed2fde47bbad25fe5e0c1736b5c9feb031960df5a0",
+      "upstream_source_sha256": "5aa2e07cdfbf88ca68f289ed2fde47bbad25fe5e0c1736b5c9feb031960df5a0",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/src/nutriomics_atlas/validation.py",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "2fffe82c89abdc6c363a722263eaa75dfee0ec71708e2d918f1e28a18d670835",
+      "reviewed_input_sha256": "2fffe82c89abdc6c363a722263eaa75dfee0ec71708e2d918f1e28a18d670835",
+      "upstream_source_sha256": "2fffe82c89abdc6c363a722263eaa75dfee0ec71708e2d918f1e28a18d670835",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/pyproject.toml",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "6effaeb4eb6610d825097287f92440294567e6ef9855d48d648c07978ed14b47",
+      "reviewed_input_sha256": "6effaeb4eb6610d825097287f92440294567e6ef9855d48d648c07978ed14b47",
+      "upstream_source_sha256": "6effaeb4eb6610d825097287f92440294567e6ef9855d48d648c07978ed14b47",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/tests/test_inventory.py",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "254c44f99a40dbc75efe14005b189d4d6d299ab8b9bf25ef1d35281fe2d5343a",
+      "reviewed_input_sha256": "254c44f99a40dbc75efe14005b189d4d6d299ab8b9bf25ef1d35281fe2d5343a",
+      "upstream_source_sha256": "254c44f99a40dbc75efe14005b189d4d6d299ab8b9bf25ef1d35281fe2d5343a",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/tests/test_metabolomics.py",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "0374966871feead825db764793277fd646cee645b57702b3b136f2da341b0ca2",
+      "reviewed_input_sha256": "0374966871feead825db764793277fd646cee645b57702b3b136f2da341b0ca2",
+      "upstream_source_sha256": "0374966871feead825db764793277fd646cee645b57702b3b136f2da341b0ca2",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/__init__.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "a3836af19358678066508139a572457562814509a451cc29c14f4b8ddac5134a",
+      "reviewed_input_sha256": "a3836af19358678066508139a572457562814509a451cc29c14f4b8ddac5134a",
+      "upstream_source_sha256": "a3836af19358678066508139a572457562814509a451cc29c14f4b8ddac5134a",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/candidate_cards.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "c3b5d129aeefcbd099d2aaf78c3dcfda1e8c83841e5d2fc1b3ddf1189bf67a3b",
+      "reviewed_input_sha256": "c3b5d129aeefcbd099d2aaf78c3dcfda1e8c83841e5d2fc1b3ddf1189bf67a3b",
+      "upstream_source_sha256": "c3b5d129aeefcbd099d2aaf78c3dcfda1e8c83841e5d2fc1b3ddf1189bf67a3b",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/cli.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "db6cde4c296e28ec18f109bf3ea5fa911c02213579b70efe56546e4aefc7f210",
+      "reviewed_input_sha256": "db6cde4c296e28ec18f109bf3ea5fa911c02213579b70efe56546e4aefc7f210",
+      "upstream_source_sha256": "db6cde4c296e28ec18f109bf3ea5fa911c02213579b70efe56546e4aefc7f210",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/data.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "aa740247bbad0fa3fd4fb873c5d4e850b9b3319677cb6b3ee3bdeb9fb69ff639",
+      "reviewed_input_sha256": "aa740247bbad0fa3fd4fb873c5d4e850b9b3319677cb6b3ee3bdeb9fb69ff639",
+      "upstream_source_sha256": "aa740247bbad0fa3fd4fb873c5d4e850b9b3319677cb6b3ee3bdeb9fb69ff639",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/deardti_kd.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "f1c83a33da6b70194ab76fc4e586b8673229a5acd6e106128846460b0118d6e0",
+      "reviewed_input_sha256": "f1c83a33da6b70194ab76fc4e586b8673229a5acd6e106128846460b0118d6e0",
+      "upstream_source_sha256": "f1c83a33da6b70194ab76fc4e586b8673229a5acd6e106128846460b0118d6e0",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/external_audit.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "1fbab00b0c634d0f9b8f8b0f1025299028f70ca7f7b3ad8a58dd5e968ba6ad9f",
+      "reviewed_input_sha256": "1fbab00b0c634d0f9b8f8b0f1025299028f70ca7f7b3ad8a58dd5e968ba6ad9f",
+      "upstream_source_sha256": "1fbab00b0c634d0f9b8f8b0f1025299028f70ca7f7b3ad8a58dd5e968ba6ad9f",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/features.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "0c2c43b7f717c6022408e90b0bd759b0820bd734febbebdb20c3b626a791abea",
+      "reviewed_input_sha256": "0c2c43b7f717c6022408e90b0bd759b0820bd734febbebdb20c3b626a791abea",
+      "upstream_source_sha256": "0c2c43b7f717c6022408e90b0bd759b0820bd734febbebdb20c3b626a791abea",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/io.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "01297aafb87eb8cd14c8b018a0b964061b3623d5a90bdca679b0daab385383e9",
+      "reviewed_input_sha256": "01297aafb87eb8cd14c8b018a0b964061b3623d5a90bdca679b0daab385383e9",
+      "upstream_source_sha256": "01297aafb87eb8cd14c8b018a0b964061b3623d5a90bdca679b0daab385383e9",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/models.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "bb56182dd2918be5ed2c159364ff24ce4901ab7a82c7976068a756452385381c",
+      "reviewed_input_sha256": "bb56182dd2918be5ed2c159364ff24ce4901ab7a82c7976068a756452385381c",
+      "upstream_source_sha256": "c83d40a83631879b275cfee66537a22232174e88df883e01b3f349f2b818b6a8",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/native_kd_runner.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "2863748b060c3c49f9a1df73b1f3c29e074ea6ffdc03c4fd19f609ecb5135216",
+      "reviewed_input_sha256": "2863748b060c3c49f9a1df73b1f3c29e074ea6ffdc03c4fd19f609ecb5135216",
+      "upstream_source_sha256": "2863748b060c3c49f9a1df73b1f3c29e074ea6ffdc03c4fd19f609ecb5135216",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/neural.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "c3048be177ff2ba1175f477814676025711d3d83415066996cf61205ae45015e",
+      "reviewed_input_sha256": "c3048be177ff2ba1175f477814676025711d3d83415066996cf61205ae45015e",
+      "upstream_source_sha256": "c3048be177ff2ba1175f477814676025711d3d83415066996cf61205ae45015e",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/prospective_kd.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "32426914be919209afde7d5865f2fdc2da78b6b5df4fa3f06e1eafe1fb679b4e",
+      "reviewed_input_sha256": "32426914be919209afde7d5865f2fdc2da78b6b5df4fa3f06e1eafe1fb679b4e",
+      "upstream_source_sha256": "32426914be919209afde7d5865f2fdc2da78b6b5df4fa3f06e1eafe1fb679b4e",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/protein_split_v2.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "130043b0b31aa874af73cf19cba549b1e84dabc14259a99cd47bc553a3dbc15e",
+      "reviewed_input_sha256": "130043b0b31aa874af73cf19cba549b1e84dabc14259a99cd47bc553a3dbc15e",
+      "upstream_source_sha256": "130043b0b31aa874af73cf19cba549b1e84dabc14259a99cd47bc553a3dbc15e",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/source_ledger_v2.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "e3990ada62b08544318023df75e8c9951947a6c89aaeb75ece54c030877637b8",
+      "reviewed_input_sha256": "e3990ada62b08544318023df75e8c9951947a6c89aaeb75ece54c030877637b8",
+      "upstream_source_sha256": "e3990ada62b08544318023df75e8c9951947a6c89aaeb75ece54c030877637b8",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/sources.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "381f9f60542791169739d75ffbb438862661a02ab22da7bf0a52d2dd2500d1b7",
+      "reviewed_input_sha256": "381f9f60542791169739d75ffbb438862661a02ab22da7bf0a52d2dd2500d1b7",
+      "upstream_source_sha256": "381f9f60542791169739d75ffbb438862661a02ab22da7bf0a52d2dd2500d1b7",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/splits.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "71cd8ed853f3edaa7c250543d1a53d566e78b92895e1c54ecabc52f78486d9d0",
+      "reviewed_input_sha256": "71cd8ed853f3edaa7c250543d1a53d566e78b92895e1c54ecabc52f78486d9d0",
+      "upstream_source_sha256": "71cd8ed853f3edaa7c250543d1a53d566e78b92895e1c54ecabc52f78486d9d0",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/vendor/__init__.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "59dc0433bae395ef33b56832df7b4ac0645f39e5312b69d1e4c3259889ca65d5",
+      "reviewed_input_sha256": "59dc0433bae395ef33b56832df7b4ac0645f39e5312b69d1e4c3259889ca65d5",
+      "upstream_source_sha256": "59dc0433bae395ef33b56832df7b4ac0645f39e5312b69d1e4c3259889ca65d5",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/vendor/deardti_encoders.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "e22b3d6873951e66fd02227adf723b289033170f0d3557805d6c192e5bfaa998",
+      "reviewed_input_sha256": "e22b3d6873951e66fd02227adf723b289033170f0d3557805d6c192e5bfaa998",
+      "upstream_source_sha256": "e22b3d6873951e66fd02227adf723b289033170f0d3557805d6c192e5bfaa998",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/src/nutriomics_dti/vendor/deardti_fusion.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "68743fc5c550828c8a74feccd19487bf2e4db56f29e246fc73bddc73fc9709ee",
+      "reviewed_input_sha256": "68743fc5c550828c8a74feccd19487bf2e4db56f29e246fc73bddc73fc9709ee",
+      "upstream_source_sha256": "68743fc5c550828c8a74feccd19487bf2e4db56f29e246fc73bddc73fc9709ee",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/pyproject.toml",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "5a53e4aa22aa50d12200c29c151b4b16e54da7f0cc701e3e23a70a95e12da3af",
+      "reviewed_input_sha256": "c045036db6f4b2e5030fbfd76a348ef502105c8d8078b44db8ded25d0174ec27",
+      "upstream_source_sha256": "c045036db6f4b2e5030fbfd76a348ef502105c8d8078b44db8ded25d0174ec27",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Public distribution packaging adjustment; see NOTICE.md."
+      ]
+    },
+    {
+      "path": "compound-target/tests/test_candidate_cards.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "f808e44484ca486e1e137c6b1c2d8ff72d35a34c4a100e98fe4d4d4e6ec0a7a5",
+      "reviewed_input_sha256": "f808e44484ca486e1e137c6b1c2d8ff72d35a34c4a100e98fe4d4d4e6ec0a7a5",
+      "upstream_source_sha256": "f808e44484ca486e1e137c6b1c2d8ff72d35a34c4a100e98fe4d4d4e6ec0a7a5",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/tests/test_data.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "67bc33a7e41b75c151866f5e87e2fb2082b9da5a649126c80ec4196e6eca51d0",
+      "reviewed_input_sha256": "67bc33a7e41b75c151866f5e87e2fb2082b9da5a649126c80ec4196e6eca51d0",
+      "upstream_source_sha256": "67bc33a7e41b75c151866f5e87e2fb2082b9da5a649126c80ec4196e6eca51d0",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/tests/test_deardti_kd.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "066729d1f2ce0869b76ab57c99674cba0998c242ec681fc75234f348d2fccdd0",
+      "reviewed_input_sha256": "066729d1f2ce0869b76ab57c99674cba0998c242ec681fc75234f348d2fccdd0",
+      "upstream_source_sha256": "066729d1f2ce0869b76ab57c99674cba0998c242ec681fc75234f348d2fccdd0",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/tests/test_external_affinity_audit.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "7080748115622d36741329f1584bcc5f415a9dac172715076367fe810da8206c",
+      "reviewed_input_sha256": "7080748115622d36741329f1584bcc5f415a9dac172715076367fe810da8206c",
+      "upstream_source_sha256": "7080748115622d36741329f1584bcc5f415a9dac172715076367fe810da8206c",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/tests/test_metrics.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "6f8c45f6d74d46461aa288e2abe231d364d56c150d9fd7a53135e4cf4ea3b55b",
+      "reviewed_input_sha256": "6f8c45f6d74d46461aa288e2abe231d364d56c150d9fd7a53135e4cf4ea3b55b",
+      "upstream_source_sha256": "6f8c45f6d74d46461aa288e2abe231d364d56c150d9fd7a53135e4cf4ea3b55b",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/tests/test_neural.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "6517748b13226f3fe94c362e9be2c51fb70f101f4194014e88faacd4d8ceb1d9",
+      "reviewed_input_sha256": "6517748b13226f3fe94c362e9be2c51fb70f101f4194014e88faacd4d8ceb1d9",
+      "upstream_source_sha256": "6517748b13226f3fe94c362e9be2c51fb70f101f4194014e88faacd4d8ceb1d9",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/tests/test_prospective_kd.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "6bd916efe6765662924141e0d7003280d8d73cd21a1bf479b8990dee3cbe5f59",
+      "reviewed_input_sha256": "6bd916efe6765662924141e0d7003280d8d73cd21a1bf479b8990dee3cbe5f59",
+      "upstream_source_sha256": "6bd916efe6765662924141e0d7003280d8d73cd21a1bf479b8990dee3cbe5f59",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/tests/test_protein_split_v2.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "93781ea8ecf1ceef0730a4ecb75b53acf4341b8ccda370984cfa5f5d978a6c98",
+      "reviewed_input_sha256": "93781ea8ecf1ceef0730a4ecb75b53acf4341b8ccda370984cfa5f5d978a6c98",
+      "upstream_source_sha256": "93781ea8ecf1ceef0730a4ecb75b53acf4341b8ccda370984cfa5f5d978a6c98",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/tests/test_splits.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "332d24220bdeb15242e3532f4843382484aea16869891927fa56be6473153339",
+      "reviewed_input_sha256": "332d24220bdeb15242e3532f4843382484aea16869891927fa56be6473153339",
+      "upstream_source_sha256": "332d24220bdeb15242e3532f4843382484aea16869891927fa56be6473153339",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "compound-target/tests/test_workflow.py",
+      "source_repository": "kangk1204/nutriomics-compound-target@99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+      "distribution_sha256": "28940e49779e4beb998df15733a7eb71651017b73f0a03cd55790c1b0c823c14",
+      "reviewed_input_sha256": "28940e49779e4beb998df15733a7eb71651017b73f0a03cd55790c1b0c823c14",
+      "upstream_source_sha256": "28940e49779e4beb998df15733a7eb71651017b73f0a03cd55790c1b0c823c14",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/scripts/analyze_gse127530.R",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "e134958dad2faaa50d7634ac5934e397b1d848379ecd359683ce688668c77464",
+      "reviewed_input_sha256": "e134958dad2faaa50d7634ac5934e397b1d848379ecd359683ce688668c77464",
+      "upstream_source_sha256": "287f9df2aab6135a8adb5f2ce1c8f515fc5933748be7ea5e3cfa94594b6aea61",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    },
+    {
+      "path": "intervention-atlas/scripts/analyze_gse56960.R",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "a949feabd4de3c33c0ac07a87f0d8d23947bd2646a14ce6eaf8974e854e25420",
+      "reviewed_input_sha256": "a949feabd4de3c33c0ac07a87f0d8d23947bd2646a14ce6eaf8974e854e25420",
+      "upstream_source_sha256": "a949feabd4de3c33c0ac07a87f0d8d23947bd2646a14ce6eaf8974e854e25420",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "intervention-atlas/scripts/analyze_gse27385.R",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "0084fb8ed5e5d992a47628376db21c34ae69a86600cd5f74c1da14559665fee9",
+      "reviewed_input_sha256": "93a3f7ab0c0792169514715adea9994bd6673c71138c0746544f4b8166e237c0",
+      "upstream_source_sha256": "93a3f7ab0c0792169514715adea9994bd6673c71138c0746544f4b8166e237c0",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Public distribution packaging adjustment; see NOTICE.md.",
+        "Require explicit local input root; no scientific protocol change."
+      ]
+    },
+    {
+      "path": "intervention-atlas/scripts/bridge_omics_helpers.R",
+      "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+      "distribution_sha256": "635914a3ce1f6194d56fdfae76cac54b2c719c6ce937a4c6032003b432f7382d",
+      "reviewed_input_sha256": "635914a3ce1f6194d56fdfae76cac54b2c719c6ce937a4c6032003b432f7382d",
+      "upstream_source_sha256": "635914a3ce1f6194d56fdfae76cac54b2c719c6ce937a4c6032003b432f7382d",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": []
+    },
+    {
+      "path": "food-quality/normalize_food_db.py",
+      "source_repository": "standalone audited companion; Git origin unverified",
+      "distribution_sha256": "963bbf52a352515c183010fc821a24fd8ce9c0f9e69fce3a99acd8795d8df1f6",
+      "reviewed_input_sha256": "963bbf52a352515c183010fc821a24fd8ce9c0f9e69fce3a99acd8795d8df1f6",
+      "upstream_source_sha256": null,
+      "upstream_status": "no Git-upstream assertion; standalone or additive source",
+      "changes": []
+    },
+    {
+      "path": "food-quality/schema.sql",
+      "source_repository": "standalone audited companion; Git origin unverified",
+      "distribution_sha256": "653e6055a103b38289e93ae02b47338b631cce370c81d43fe82766acd33a402c",
+      "reviewed_input_sha256": "653e6055a103b38289e93ae02b47338b631cce370c81d43fe82766acd33a402c",
+      "upstream_source_sha256": null,
+      "upstream_status": "no Git-upstream assertion; standalone or additive source",
+      "changes": []
+    },
+    {
+      "path": "food-quality/test_normalize_food_db.py",
+      "source_repository": "standalone audited companion; Git origin unverified",
+      "distribution_sha256": "be4e3ac24a75b86ec8f758bb4d8b3272ed815690f6c710ddf5bd4fcfa1c7c60b",
+      "reviewed_input_sha256": "be4e3ac24a75b86ec8f758bb4d8b3272ed815690f6c710ddf5bd4fcfa1c7c60b",
+      "upstream_source_sha256": null,
+      "upstream_status": "no Git-upstream assertion; standalone or additive source",
+      "changes": []
+    },
+    {
+      "path": "food-dictionary/dictionary.py",
+      "source_repository": "standalone audited companion; Git origin unverified",
+      "distribution_sha256": "7b3aca84b2117460863048b4d8231d1cf8a0c6112122f32fd1557995fab45c50",
+      "reviewed_input_sha256": "7b3aca84b2117460863048b4d8231d1cf8a0c6112122f32fd1557995fab45c50",
+      "upstream_source_sha256": null,
+      "upstream_status": "no Git-upstream assertion; standalone or additive source",
+      "changes": []
+    },
+    {
+      "path": "food-dictionary/evaluate.py",
+      "source_repository": "standalone audited companion; Git origin unverified",
+      "distribution_sha256": "998950475930517acba9fffe21b5e7bf503e14b8d3d6f16d22a83c4b8733d947",
+      "reviewed_input_sha256": "998950475930517acba9fffe21b5e7bf503e14b8d3d6f16d22a83c4b8733d947",
+      "upstream_source_sha256": null,
+      "upstream_status": "no Git-upstream assertion; standalone or additive source",
+      "changes": []
+    },
+    {
+      "path": "food-dictionary/schema.sql",
+      "source_repository": "standalone audited companion; Git origin unverified",
+      "distribution_sha256": "c0d38f5de08907d5aa562100f1b54745959a13f8d34b8c9ecfdf77c60596969e",
+      "reviewed_input_sha256": "c0d38f5de08907d5aa562100f1b54745959a13f8d34b8c9ecfdf77c60596969e",
+      "upstream_source_sha256": null,
+      "upstream_status": "no Git-upstream assertion; standalone or additive source",
+      "changes": []
+    },
+    {
+      "path": "food-dictionary/test_dictionary.py",
+      "source_repository": "standalone audited companion; Git origin unverified",
+      "distribution_sha256": "009379af25d52595d4b27f4677f84edd5a3a05dbd45440a2f3092493482a261c",
+      "reviewed_input_sha256": "1518db15187374ee5456a3b9792614905cc191bf8569bdefa7c60c6054a18f87",
+      "upstream_source_sha256": null,
+      "upstream_status": "no Git-upstream assertion; standalone or additive source",
+      "changes": [
+        "Public distribution packaging adjustment; see NOTICE.md."
+      ]
+    },
+    {
+      "path": "public-data/dataset.json",
+      "source_repository": "fooddb-public-20261005-0230; government-computed PubChem53 fields only",
+      "distribution_sha256": "ff4ef342a0bc01434272a8397a31d8b12fe0092e69eb265fafc895ed13c5ea44",
+      "reviewed_input_sha256": "ff4ef342a0bc01434272a8397a31d8b12fe0092e69eb265fafc895ed13c5ea44",
+      "upstream_source_sha256": null,
+      "upstream_status": "no Git-upstream assertion; standalone or additive source",
+      "changes": []
+    },
+    {
+      "path": "public-data/contract.json",
+      "source_repository": "fooddb-public-20261005-0230; government-computed PubChem53 fields only",
+      "distribution_sha256": "411624df8f899ff763e1ef75633b08a78f91869593645deeae138b2b7158e025",
+      "reviewed_input_sha256": "411624df8f899ff763e1ef75633b08a78f91869593645deeae138b2b7158e025",
+      "upstream_source_sha256": null,
+      "upstream_status": "no Git-upstream assertion; standalone or additive source",
+      "changes": []
+    },
+    {
+      "path": "public-data/rights_manifest.json",
+      "source_repository": "fooddb-public-20261005-0230; government-computed PubChem53 fields only",
+      "distribution_sha256": "914483998cfada703d995d791d28a186c79add940914a0a6c873b44eae84cb88",
+      "reviewed_input_sha256": "914483998cfada703d995d791d28a186c79add940914a0a6c873b44eae84cb88",
+      "upstream_source_sha256": null,
+      "upstream_status": "no Git-upstream assertion; standalone or additive source",
+      "changes": []
+    },
+    {
+      "path": "public-data/manifest.json",
+      "source_repository": "fooddb-public-20261005-0230; government-computed PubChem53 fields only",
+      "distribution_sha256": "0f3b690a124de318355fe5eccb82378e5ca507983f86927289ab2b3de1838b44",
+      "reviewed_input_sha256": "0f3b690a124de318355fe5eccb82378e5ca507983f86927289ab2b3de1838b44",
+      "upstream_source_sha256": null,
+      "upstream_status": "no Git-upstream assertion; standalone or additive source",
+      "changes": []
+    },
+    {
+      "path": "public-data/foods-rights-manifest.json",
+      "source_repository": "existing USDA rights receipt",
+      "distribution_sha256": "ac17a50e285c9043abc57a26c3bb7d28c3b8102b56899f8f78dae774abace222",
+      "reviewed_input_sha256": "ac17a50e285c9043abc57a26c3bb7d28c3b8102b56899f8f78dae774abace222",
+      "upstream_source_sha256": null,
+      "upstream_status": "no Git-upstream assertion; standalone or additive source",
+      "changes": []
+    },
+    {
+      "path": "integration/scripts/revise_hwpx.py",
+      "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+      "reviewed_input_sha256": "b9eb2292bcbe5bbaa0593841343c6b4cce009e15e67e83a4a29d9db297006c39",
+      "upstream_source_sha256": "c900ab71aab1415f671d7a2ae8e98576990dec5a77193f5ddc59d0ea8cf2322a",
+      "distribution_sha256": "b9eb2292bcbe5bbaa0593841343c6b4cce009e15e67e83a4a29d9db297006c39",
+      "upstream_status": "verified frozen source at named commit",
+      "changes": [
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    }
+  ]
+}

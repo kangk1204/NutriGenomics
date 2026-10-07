@@ -1,0 +1,36 @@
+{
+  "release_id": "fooddb-public-20261005-0230",
+  "generated_utc": "2026-10-05T02:35:06.587025+00:00",
+  "counts": {
+    "compounds": 53,
+    "names_en_computed": 53,
+    "names_ko": 0,
+    "identifier_links": 53,
+    "foods": 0,
+    "food_compound_relationships": 0,
+    "public_fuzzy_candidates": 0
+  },
+  "coverage": {
+    "staged_structure_denominator": 4630,
+    "private_verified_bilingual_structure_count": 53,
+    "public_compound_registry_count": 53,
+    "public_bilingual_pairs": 0,
+    "coverage_note": "A real structure registry pilot, not a food occurrence database or a fully bilingual catalog. No licensed food relationships are included."
+  },
+  "files": {
+    "dataset.json": {
+      "bytes": 152192,
+      "sha256": "ff4ef342a0bc01434272a8397a31d8b12fe0092e69eb265fafc895ed13c5ea44"
+    },
+    "rights_manifest.json": {
+      "bytes": 21774,
+      "sha256": "914483998cfada703d995d791d28a186c79add940914a0a6c873b44eae84cb88"
+    },
+    "contract.json": {
+      "bytes": 1472,
+      "sha256": "411624df8f899ff763e1ef75633b08a78f91869593645deeae138b2b7158e025"
+    }
+  },
+  "publication_eligible": true,
+  "publication_scope": "Government-computed compound registry fields only; zero bilingual or food occurrence content."
+}

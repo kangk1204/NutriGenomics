@@ -1,0 +1,1118 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Nutri public projection API",
+    "version": "1.0.0",
+    "description": "Code contract; public deployment and model inference unverified."
+  },
+  "servers": [],
+  "paths": {
+    "/api/v1/health": {
+      "get": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Public release response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Health"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Same status/headers as GET, without body"
+          }
+        }
+      }
+    },
+    "/api/v1/components": {
+      "get": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Public release response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Same status/headers as GET, without body"
+          }
+        }
+      }
+    },
+    "/api/v1/provenance": {
+      "get": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Public release response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Same status/headers as GET, without body"
+          }
+        }
+      }
+    },
+    "/api/v1/openapi.json": {
+      "get": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Public release response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Same status/headers as GET, without body"
+          }
+        }
+      }
+    },
+    "/api/v1/compounds": {
+      "get": {
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000,
+              "default": 0
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Public release response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CompoundList"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000,
+              "default": 0
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Same status/headers as GET, without body"
+          }
+        }
+      }
+    },
+    "/api/v1/foods": {
+      "get": {
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000,
+              "default": 0
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Public release response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FoodList"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000,
+              "default": 0
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Same status/headers as GET, without body"
+          }
+        }
+      }
+    },
+    "/api/v1/foods/{id}": {
+      "get": {
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Exact native food ID, percent-encoded."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Public release response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Exact native food ID, percent-encoded."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Same status/headers as GET, without body"
+          }
+        }
+      }
+    },
+    "/api/v1/foods/{id}/reports": {
+      "get": {
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000,
+              "default": 0
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Exact native food ID, percent-encoded."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Public release response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReportList"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000,
+              "default": 0
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Exact native food ID, percent-encoded."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Same status/headers as GET, without body"
+          }
+        }
+      }
+    },
+    "/api/v1/exports/compounds": {
+      "get": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Public release response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Same status/headers as GET, without body"
+          }
+        }
+      }
+    },
+    "/api/v1/exports/foods": {
+      "get": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Public release response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FoodExport"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Same status/headers as GET, without body"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "required": [
+          "schema_version",
+          "error"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "nutri-public-api-v1"
+          },
+          "error": {
+            "type": "object",
+            "required": [
+              "code",
+              "message"
+            ],
+            "properties": {
+              "code": {
+                "enum": [
+                  "invalid_request",
+                  "not_found",
+                  "method_not_allowed"
+                ]
+              },
+              "message": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "Compound": {
+        "type": "object",
+        "required": [
+          "id",
+          "full_inchikey",
+          "inchi",
+          "isomeric_smiles",
+          "iupac_name",
+          "source"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "full_inchikey": {
+            "type": "string",
+            "pattern": "^[A-Z]{14}-[A-Z]{10}-[A-Z]$"
+          },
+          "inchi": {
+            "type": "string"
+          },
+          "isomeric_smiles": {
+            "type": "string"
+          },
+          "iupac_name": {
+            "type": "string"
+          },
+          "source": {
+            "type": "object"
+          }
+        }
+      },
+      "Food": {
+        "type": "object",
+        "required": [
+          "id",
+          "fdc_id",
+          "name_en",
+          "entity_type",
+          "source"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "fdc_id": {
+            "type": "integer"
+          },
+          "name_en": {
+            "type": "string"
+          },
+          "entity_type": {
+            "const": "food"
+          },
+          "source": {
+            "type": "object"
+          }
+        }
+      },
+      "Report": {
+        "type": "object",
+        "required": [
+          "id",
+          "food_id",
+          "target_id",
+          "target_entity_type",
+          "quantity",
+          "source"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "food_id": {
+            "type": "string"
+          },
+          "target_id": {
+            "type": "string"
+          },
+          "target_entity_type": {
+            "enum": [
+              "nutrient",
+              "measure"
+            ]
+          },
+          "quantity": {
+            "type": "object",
+            "required": [
+              "amount",
+              "original_unit",
+              "status",
+              "basis",
+              "molecule_presence_asserted"
+            ],
+            "properties": {
+              "amount": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "original_unit": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "basis": {
+                "type": "object"
+              },
+              "molecule_presence_asserted": {
+                "const": false
+              }
+            }
+          },
+          "source": {
+            "type": "object"
+          }
+        }
+      },
+      "Health": {
+        "type": "object",
+        "required": [
+          "schema_version",
+          "status",
+          "mode",
+          "counts",
+          "provenance"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "nutri-public-api-v1"
+          },
+          "status": {
+            "const": "ok"
+          },
+          "mode": {
+            "const": "read_only_public_projection"
+          },
+          "counts": {
+            "type": "object",
+            "required": [
+              "compounds",
+              "foods",
+              "food_reports"
+            ],
+            "properties": {
+              "compounds": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "foods": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "food_reports": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          },
+          "provenance": {
+            "type": "object"
+          }
+        }
+      },
+      "FoodExport": {
+        "type": "object",
+        "required": [
+          "schema_version",
+          "release_id",
+          "source_dataset_sha256",
+          "foods",
+          "reports",
+          "nutrients",
+          "measures",
+          "counts"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "nutri-public-food-pilot-v1"
+          },
+          "release_id": {
+            "type": "string"
+          },
+          "source_dataset_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "foods": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Food"
+            }
+          },
+          "reports": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Report"
+            }
+          },
+          "nutrients": {
+            "type": "array"
+          },
+          "measures": {
+            "type": "array"
+          },
+          "counts": {
+            "type": "object"
+          }
+        }
+      },
+      "CompoundList": {
+        "type": "object",
+        "required": [
+          "schema_version",
+          "release_id",
+          "total",
+          "offset",
+          "limit",
+          "items"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "nutri-public-api-v1"
+          },
+          "release_id": {
+            "type": "string"
+          },
+          "total": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "offset": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Compound"
+            }
+          }
+        }
+      },
+      "FoodList": {
+        "type": "object",
+        "required": [
+          "schema_version",
+          "release_id",
+          "total",
+          "offset",
+          "limit",
+          "items"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "nutri-public-api-v1"
+          },
+          "release_id": {
+            "type": "string"
+          },
+          "total": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "offset": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Food"
+            }
+          }
+        }
+      },
+      "ReportList": {
+        "type": "object",
+        "required": [
+          "schema_version",
+          "release_id",
+          "total",
+          "offset",
+          "limit",
+          "items"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "nutri-public-api-v1"
+          },
+          "release_id": {
+            "type": "string"
+          },
+          "total": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "offset": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Report"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": "nutri-public-provenance-v1",
+  "source_manifest_sha256": "cec7e06d4fe233ded734f81e8116fb33bcbefc654d4e803a011580734bf123cc",
+  "compound_release_id": "fooddb-public-20261005-0230",
+  "food_release_id": "nutri-public-food-pilot-20261007",
+  "data_rights": "See public-data/rights_manifest.json and foods-rights-manifest.json. Code licensing is separate.",
+  "deployment_status": "not_deployed_by_this_distribution",
+  "inference_status": "unverified; no model inference HTTP routes",
+  "scope": "53 government-computed PubChem structures,2 existing USDA pilot foods,172 native food-nutrient reports"
+}

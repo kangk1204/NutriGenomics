@@ -1,0 +1,8 @@
+{
+  "name": "nutri-public-projection-api",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=22"},
+  "scripts": {"test": "node --test test-api.mjs"},
+  "license": "Apache-2.0"
+}

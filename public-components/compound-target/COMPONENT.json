@@ -1,0 +1,10 @@
+{
+  "component": "compound-target",
+  "source_repository": "https://github.com/kangk1204/nutriomics-compound-target",
+  "source_branch": "main",
+  "source_commit": "99da2fd3cf3d4413a2ba708b03a34d54f775e0dd",
+  "distribution": "reviewed code only with audited corrections",
+  "public_runtime": "unverified",
+  "data_and_weights_included": false,
+  "code_license": "Apache-2.0 except preserved third-party notices"
+}

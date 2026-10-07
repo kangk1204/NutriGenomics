@@ -1,0 +1,10 @@
+{
+  "component": "intervention-atlas",
+  "source_repository": "https://github.com/kangk1204/nutriomics-intervention-atlas",
+  "source_branch": "main",
+  "source_commit": "beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
+  "distribution": "reviewed code only with audited corrections",
+  "public_runtime": "unverified",
+  "data_and_weights_included": false,
+  "code_license": "Apache-2.0 except preserved third-party notices"
+}

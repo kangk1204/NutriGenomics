@@ -1,0 +1,10 @@
+{
+  "component": "integration",
+  "source_repository": "https://github.com/kangk1204/nutriomics-final-report",
+  "source_branch": "main",
+  "source_commit": "4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
+  "distribution": "reviewed code only with audited corrections",
+  "public_runtime": "unverified",
+  "data_and_weights_included": false,
+  "code_license": "Apache-2.0 except preserved third-party notices"
+}

@@ -1,0 +1,379 @@
+{
+  "schema_version": "rights-v1",
+  "checked_utc": "2026-10-05T02:35:06.587025+00:00",
+  "decision_scope": "Field-specific export gate, not legal certification or a blanket license for any source.",
+  "sources": [
+    {
+      "source_id": "pubchem-government-computed",
+      "decision": "eligible_selected_fields",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/",
+      "version": "Per-record computed-method release and retrieval date in dataset.json",
+      "license": "LicenseRef-NCBI-USGovernment-PublicDomain",
+      "license_url": "https://www.ncbi.nlm.nih.gov/home/about/policies/",
+      "basis": "NCBI policy permits copying/distribution of government-created information. Every exported descriptor is explicitly Computed by and attributed to PubChem in its primary response; contributor text, deposited descriptions and record titles are excluded.",
+      "policy_capture_sha256": "8ad8f6f186ca51ec73a5fb8935ecfa17b8cbaad300b7025b381898ab72621869",
+      "attribution": "National Center for Biotechnology Information, U.S. National Library of Medicine. PubChem computed descriptors. Retrieved 2026-10-05. No institutional endorsement.",
+      "allowed_source_fields": [
+        "RecordNumber as pubchem_cid",
+        "Computed Descriptors/IUPAC Name",
+        "Computed Descriptors/InChI",
+        "Computed Descriptors/InChIKey",
+        "Computed Descriptors/SMILES"
+      ],
+      "excluded_source_fields": [
+        "RecordTitle",
+        "Depositor synonyms",
+        "Descriptions",
+        "CAS registry assertions",
+        "Bioassays",
+        "Contributor annotations",
+        "Food occurrence statements"
+      ],
+      "record_count": 53,
+      "record_captures": {
+        "5281855": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5281855/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:07.719837+00:00",
+          "sha256": "78451bb42db3e35b18af321a59f66198dcb60377a96c2b23dc41381703fddfb1"
+        },
+        "6288": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6288/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:07.716513+00:00",
+          "sha256": "9c041986d5a0c85ce619f9b8b136edecbbb1e626d317acd683638b5f37c2b19a"
+        },
+        "54670067": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/54670067/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:08.440650+00:00",
+          "sha256": "e032bbc51bede729be059dfe603b68487052d2fd72859e1edafdbaf645d9e75d"
+        },
+        "5960": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5960/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:08.421742+00:00",
+          "sha256": "821ac4e94a2d3487dcc4904a36325efd13504d075260bc72db875ef72ca11bfb"
+        },
+        "180": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/180/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:09.214989+00:00",
+          "sha256": "c78068f8ad60dacca52ec284bd3e2693cc9e83e90a109b02a0cabd94aacce43c"
+        },
+        "280": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/280/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:08.853123+00:00",
+          "sha256": "7f88fb4f2be9ddcf44018d75af960d1fe519bd80dad8144d5bf9643b3e2479f1"
+        },
+        "936": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/936/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:09.657653+00:00",
+          "sha256": "2b610c9cf9833ab7af79e0efe6c31a5443bc55935a98036fe4dbe56891a94e49"
+        },
+        "750": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/750/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:09.905852+00:00",
+          "sha256": "9b452e8f282024e0f29e10098ce517509475e767c0fb547485890a7afee978c6"
+        },
+        "31272": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/31272/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:10.369176+00:00",
+          "sha256": "4267942cd83dcca772d035f9ffed030459b27b490309502d1f354cf2394340d3"
+        },
+        "7590": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7590/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:10.217275+00:00",
+          "sha256": "02fb56930dbcd610de4f4b65a64b90997d78c1ace5566533de6af1c65f87bb1d"
+        },
+        "6137": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6137/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:10.950802+00:00",
+          "sha256": "713924b8e9567ad7acd1e4c32df74133056a04296f4cd6be0b9b6d5627921f1a"
+        },
+        "7749": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7749/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:10.665813+00:00",
+          "sha256": "b7ba1b473664605d3e6391914bd5901cee52466f5a8601ef963a3f9a9d165b35"
+        },
+        "6826": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6826/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:11.345735+00:00",
+          "sha256": "b77ba22296cf5de2753afb1c3b9ecadbc7ff20d2cf542fb6975746f45717b4d9"
+        },
+        "240": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/240/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:11.698624+00:00",
+          "sha256": "e6cb7df96b182cf15a8174ad80966316114e88df2e8011cbd9db3e260a7f11d3"
+        },
+        "947": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/947/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:12.033879+00:00",
+          "sha256": "247cac00517516ad12ec8d21f2d5d24da886595bcbf3c461d09cf02c7c629464"
+        },
+        "5280445": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5280445/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:12.003138+00:00",
+          "sha256": "73b4fb3f354e9f71442b23f8b81182fc73c53a4d8885e607f9065945c4af177d"
+        },
+        "5280863": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5280863/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:12.768639+00:00",
+          "sha256": "6f2d53bc9a4e2273e8b65448cafc9fbcf94d3fae7d5c21760d95a79bbb09ab9b"
+        },
+        "5962": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5962/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:12.347926+00:00",
+          "sha256": "163ae42c4ec9cea161c3980ad02980f76f24f110d843bab885e0772a7930aa4f"
+        },
+        "1110": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1110/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:12.670348+00:00",
+          "sha256": "a276fecb073c884714ad642aa3bc5246f76ad9b77122fa71a943b0a7cf5f55be"
+        },
+        "8175": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8175/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:13.037821+00:00",
+          "sha256": "13f88613ea2b310900af54c1636281071e94913bdd9903b5962696c1ec2bbfd9"
+        },
+        "7410": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7410/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:13.498495+00:00",
+          "sha256": "233bddd33621f8c25036c7a57f676cabec4e6b267e006181981278196acd73c1"
+        },
+        "24526": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/24526/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:13.796687+00:00",
+          "sha256": "eeede2e2526b17740f71aa89cb6eb2b18e706f12218062171af936d8e13d0d0d"
+        },
+        "5280443": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5280443/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:14.187855+00:00",
+          "sha256": "5925cbb080f7cc90521ae8eb7f715b38e1f52601a8c7f8e9ddc9e7563ee2e4c4"
+        },
+        "1183": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1183/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:14.493431+00:00",
+          "sha256": "f9e0e7d23ed89e337ad3026b55d10125c69b58048d93d13c03e5b1982fcf671b"
+        },
+        "1004": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1004/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:14.518229+00:00",
+          "sha256": "7e6e1cf4cea994fa2de58af788fc65976c1334db02ac0835b98d6825e24db659"
+        },
+        "7762": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7762/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:14.843152+00:00",
+          "sha256": "138a01a38d1f129a4cfb76a411ca48daa25ae85a719ba0e254a4841e3de1e417"
+        },
+        "145742": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/145742/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:14.843410+00:00",
+          "sha256": "7d98146c13f31b0787dcc214248b49b3fee78bd7278bb5e4557acbb7ad20f24d"
+        },
+        "4133": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/4133/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:15.531569+00:00",
+          "sha256": "066aa379275932923795a39a988fb885c8063de0ac45b381e7c46270cb75891d"
+        },
+        "135398658": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/135398658/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:15.538588+00:00",
+          "sha256": "2eb5c220b9696cc041e048f731f50ae1514aaa1d09d5fbf2e5950c1791cd9686"
+        },
+        "7945": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7945/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:16.202418+00:00",
+          "sha256": "393af444dd68eac0c91f3b9d35787ed91c4f19693d80384bec2b29c1d65cab94"
+        },
+        "7795": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7795/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:16.301342+00:00",
+          "sha256": "e6b2ea6be059c83bf152574a939b0ea48a2e8be09dfa9ae3970a743921477344"
+        },
+        "938": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/938/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:16.943389+00:00",
+          "sha256": "bd56721e100e5e3513b196cb3a3b2833e558a957cd5f48e86e529709fad46fbf"
+        },
+        "222": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/222/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:17.128658+00:00",
+          "sha256": "c98cf6bd3d5eb3c44de69d5b43fde07cd90d413c37886d17648cf20280dce8f9"
+        },
+        "6305": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6305/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:17.273509+00:00",
+          "sha256": "f1029ad202284d25f32c2e29407c4110cbb40ca0d092e725d46ea46c285be518"
+        },
+        "5950": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5950/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:17.840282+00:00",
+          "sha256": "b23197a50077e57abc42acc9c704bbd58b2edfd5bc7830dd675ab15174c63c14"
+        },
+        "8048": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8048/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:17.990256+00:00",
+          "sha256": "65aca7ff57bb89fc7ed659f934ff5ae9c22c5e9f131fd8d2419fe54910defd23"
+        },
+        "3314": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/3314/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:18.150067+00:00",
+          "sha256": "4a8935d3cf31df29f4ec69d988de2d5aecdb17d2d53613e1fdb54b53d48672c0"
+        },
+        "2519": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/2519/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:18.335451+00:00",
+          "sha256": "72aaf028a2a95ef94c75d613dcb2811fa6b18a490a1c3d43b50c626f5f32d293"
+        },
+        "31265": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/31265/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:18.511030+00:00",
+          "sha256": "59502575a9d064faaf2e53d4e015b521c3f9c7fbd6e2927e2c61973284bc315e"
+        },
+        "7797": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7797/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:19.036368+00:00",
+          "sha256": "b29849b4b9fad938996dc2382cb2dec71dac2be6ccd828d336095ad9617ef0c8"
+        },
+        "8058": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8058/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:18.839199+00:00",
+          "sha256": "bab70666bbb8d6b4f63e52a285677a16fcb786e8ef23a188f83b60f920f81afb"
+        },
+        "33032": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/33032/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:19.562498+00:00",
+          "sha256": "982a758d5ee168e2e9ed20f1c10af7a3e732e7d6c84d6c9a7345cca899491ca6"
+        },
+        "243": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/243/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:19.740800+00:00",
+          "sha256": "3311793e3e26acc3c3aaecc6ec1f58292544ec37f313d0247d2ac1ca126429e8"
+        },
+        "244": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/244/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:19.879424+00:00",
+          "sha256": "62aca87b336d69dfcdf7861b52d0be7d9e5e83e7629f2827e1ea9b181ef6b026"
+        },
+        "8857": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8857/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:20.436515+00:00",
+          "sha256": "0091ad4badfaad1f67ae699f41beda1424c47a44fbfb8047a8c7864860b2f1c2"
+        },
+        "1123": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/1123/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:20.181851+00:00",
+          "sha256": "bc5727fc149e8130777a6d29617ed91d9577dce5fcf5f390c45c5a6b244ca378"
+        },
+        "8369": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8369/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:20.495368+00:00",
+          "sha256": "43d905affb393c51f82fcdeba8ea3c36b1daae2d63bff11d77fdcd4d480e29b5"
+        },
+        "7983": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7983/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:20.727415+00:00",
+          "sha256": "ca2cec2f75ac4e23de080c6b952d9512292f0863c61fb4098df466a68882bdf1"
+        },
+        "5429": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5429/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:20.877099+00:00",
+          "sha256": "6a08b13f96cc38de0bc7ea270ff45942886fa1f2488d69b95dbffb0d9660c931"
+        },
+        "7799": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/7799/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:21.406494+00:00",
+          "sha256": "56b831ab6e153523b2c715fa34620727a3b80528b4585257283a322c2401066b"
+        },
+        "5961": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5961/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:21.564791+00:00",
+          "sha256": "373b19e080d792a376c9a0bdba23495776fbd8112f843f45443cdb6d701b7bbf"
+        },
+        "445639": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/445639/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:22.108207+00:00",
+          "sha256": "ee8f1ba317d0a4927551690fd2f2e86b276a74efb88381adf7425fb21297a92a"
+        },
+        "4947": {
+          "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/4947/JSON?heading=Computed%20Descriptors",
+          "retrieved_utc": "2026-10-05T02:32:21.936642+00:00",
+          "sha256": "46ca2500da03624960c50ec3b69225afa6a23ee4733d0ae67f4ab9b9b0fdb68c"
+        }
+      }
+    },
+    {
+      "source_id": "duke",
+      "decision": "license_verified_but_no_direct_rows_exported",
+      "source_url": "https://phytochem.nal.usda.gov/about",
+      "version": "1992-2016 database citation; policy checked 2026-10-05",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "evidence": "Primary About page explicitly dedicates database contents to CC0.",
+      "attribution": "U.S. Department of Agriculture, Agricultural Research Service. 1992-2016. Dr. Duke’s Phytochemical and Ethnobotanical Databases. DOI10.15482/USDA.ADC/1239279.",
+      "record_count": 0,
+      "excluded_fields": "All staged Duke observations arrived through a separate FooDB compilation; no direct original-row provenance reconciliation completed for this release."
+    },
+    {
+      "source_id": "mfds",
+      "decision": "excluded_uncertain_item_rights",
+      "source_url": "https://www.mfds.go.kr/brd/m_211/view.do?seq=14980",
+      "version": "2026-50,2026-07-13",
+      "license": "unverified_for_this_item",
+      "license_url": "https://www.mfds.go.kr/wpge/m_34/de010803l001.do",
+      "reason": "Captured item-specific KOGL mark not found; policy asks consultation for unmarked works. Public reading/research authorization does not resolve redistribution.",
+      "excluded_fields": [
+        "Official bilingual names",
+        "Monograph text",
+        "MFDS food sample names and context fields",
+        "MFDS-to-other-database links"
+      ],
+      "record_count": 0
+    },
+    {
+      "source_id": "foodb",
+      "decision": "excluded_uncertain_redistribution",
+      "source_url": "https://foodb.ca/compliance",
+      "version": "Historical September2022 staged compilation",
+      "license": "unverified",
+      "reason": "Primary compliance route returned403. No bypass or retry; repository code licensing is not data redistribution permission.",
+      "excluded_fields": [
+        "FooDB identifiers",
+        "Original aliases",
+        "Food records",
+        "Food contexts",
+        "Concentrations",
+        "Occurrence relations",
+        "Raw evidence",
+        "Candidate links"
+      ],
+      "record_count": 0
+    },
+    {
+      "source_id": "rda",
+      "decision": "excluded_no_item_version_license_or_rows",
+      "source_url": "https://koreanfood.rda.go.kr/",
+      "version": "unavailable in authorized input",
+      "license": "unverified",
+      "reason": "No RDA dataset item, version, license receipt or source rows in this enrichment batch. An unrestricted dataset from another agency cannot be substituted.",
+      "record_count": 0
+    },
+    {
+      "source_id": "scientific_translation_sources",
+      "decision": "excluded_until_item_rights_verified",
+      "source_url": null,
+      "version": "2008/2018/2019/2021 primary lexical sources",
+      "license": "mixed_or_unverified",
+      "reason": "Scientific correctness verification is separate from redistribution eligibility. All five source-verified Korean labels and their copied lexical metadata are withheld from this public pilot.",
+      "record_count": 0
+    }
+  ],
+  "generated_fields": {
+    "fields": [
+      "Public IDs",
+      "Validation statuses",
+      "Counts",
+      "Coverage",
+      "Identifier links",
+      "Provenance pointers"
+    ],
+    "basis": "Original transformation/validation output authorized for public sharing; contains no private paths, source candidate contents, credentials or personal information."
+  },
+  "food_relationship_release_gate": "Require item-specific transferable reuse terms and direct field/record lineage, then scientific food context validation; current release exports zero food/occurrence rows."
+}
