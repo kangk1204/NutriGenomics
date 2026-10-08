@@ -13,23 +13,33 @@
     },
     {
       "path": "NOTICE.md",
-      "bytes": 2500,
-      "sha256": "0ade3f68ad10631b1b0497c99c78b192868df5aa16950b18621b8579ed9ed849"
+      "bytes": 2957,
+      "sha256": "a732e02bc59dff4bc7c7f09448c56c609d19e4979c0a55ee2aceb87023df19c5"
     },
     {
       "path": "README.md",
-      "bytes": 4228,
-      "sha256": "9ad57eb7b0864b0d2d837d9bc3651d73578dd5a3db2879f0ab3e9be7b32cfe0a"
+      "bytes": 4923,
+      "sha256": "15dc5030d6483057e9729f1e6ef6eb5356b65ec7f03f4faff5936247148b8f02"
     },
     {
       "path": "SOURCE_MANIFEST.json",
-      "bytes": 77014,
-      "sha256": "cec7e06d4fe233ded734f81e8116fb33bcbefc654d4e803a011580734bf123cc"
+      "bytes": 80545,
+      "sha256": "9354dc8b83bc8cc1681ac1339103b7261fd63d3b8e712a0c9f170f5c165bc61f"
     },
     {
       "path": "VALIDATION.json",
-      "bytes": 627,
-      "sha256": "6653319778fa211b2299b5c2fe9a35aad9f43ba4cb3d9df963a5b315ea05f335"
+      "bytes": 1983,
+      "sha256": "44564b72bcd486b12accea877fe11fa61a1e7c6907d81b8dd2dd9de42fff6b14"
+    },
+    {
+      "path": "ci/README.md",
+      "bytes": 1943,
+      "sha256": "a60d233fdde7b7a1200ab905f6e878e17d5d0adc75ec62379d4f7c49e6039f3c"
+    },
+    {
+      "path": "ci/requirements.txt",
+      "bytes": 302,
+      "sha256": "f000517e3b586e706c0d2f55b0963cf0b166410a2e68fbc798bae033f29b75d9"
     },
     {
       "path": "compound-target/COMPONENT.json",
@@ -468,8 +478,8 @@
     },
     {
       "path": "integration/src/nutriomics_final/api.py",
-      "bytes": 16939,
-      "sha256": "e960d049c2752b6e7b63b4156f488a459416879b6f7d3ac92f7e1d867ee62ab4"
+      "bytes": 17029,
+      "sha256": "ead6b079444468746f35835ad6dcc6492716427b3ced52662ad395faeeed84f3"
     },
     {
       "path": "integration/src/nutriomics_final/cli.py",
@@ -478,8 +488,13 @@
     },
     {
       "path": "integration/src/nutriomics_final/dispatch.py",
-      "bytes": 7229,
-      "sha256": "971bebac3409104947d4772356ee921299007ab45653b0b08ca8c6121523e09c"
+      "bytes": 8002,
+      "sha256": "32e9a0bac0b682041406a9c1731fc331b6463e7f20affde2ea149fbbe248a51d"
+    },
+    {
+      "path": "integration/src/nutriomics_final/execution_sources.py",
+      "bytes": 5091,
+      "sha256": "1bc00c46e81feaa962cd2645ac5a3891ad2be1f00161d39ba40967262f33172d"
     },
     {
       "path": "integration/src/nutriomics_final/food_registry.py",
@@ -510,6 +525,11 @@
       "path": "integration/tests/test_acceptance.py",
       "bytes": 7243,
       "sha256": "90ed08ef275dac8e33dc6fd91c418bdbc1d1f45b507494c239c871fe4f69c1be"
+    },
+    {
+      "path": "integration/tests/test_default_dispatch.py",
+      "bytes": 6425,
+      "sha256": "4603906b961da9f8b3572705b693bc2e62348d1f8697fb6237ac686ce2fb794d"
     },
     {
       "path": "integration/tests/test_food_registry.py",
@@ -623,8 +643,8 @@
     },
     {
       "path": "intervention-atlas/src/nutriomics_atlas/validation.py",
-      "bytes": 3012,
-      "sha256": "2fffe82c89abdc6c363a722263eaa75dfee0ec71708e2d918f1e28a18d670835"
+      "bytes": 10205,
+      "sha256": "e1f7e0170b293c51a29aa0d8ecc88062a7e421b846be30a6b0020397649c17ab"
     },
     {
       "path": "intervention-atlas/tests/test_inventory.py",
@@ -635,6 +655,11 @@
       "path": "intervention-atlas/tests/test_metabolomics.py",
       "bytes": 5979,
       "sha256": "0374966871feead825db764793277fd646cee645b57702b3b136f2da341b0ca2"
+    },
+    {
+      "path": "intervention-atlas/tests/test_validation_contract.py",
+      "bytes": 11435,
+      "sha256": "c60549b1bdd4039e93a2b8b3dcb984a1ceef4f1520fae7c097a4ce119c7d8e93"
     },
     {
       "path": "methylation/COMPONENT.json",
@@ -668,8 +693,8 @@
     },
     {
       "path": "methylation/src/nutriomics_methylation/evaluation.py",
-      "bytes": 12799,
-      "sha256": "2db1e93ee1a2190e55560de637831da148daddd8ea55212c78a0b901bac514fd"
+      "bytes": 12807,
+      "sha256": "660f1de16c526d903c5926092e35ae2cca4ce068608c1dfdec9f854802e543ff"
     },
     {
       "path": "methylation/src/nutriomics_methylation/extension_grid.py",
@@ -705,6 +730,11 @@
       "path": "methylation/tests/test_chronic.py",
       "bytes": 2285,
       "sha256": "c3196f0d063374f012ee122fd82fe6781aa5c5306ae68707eabd568840f9b068"
+    },
+    {
+      "path": "methylation/tests/test_export_manifest.py",
+      "bytes": 3611,
+      "sha256": "40064beccb0611a0fc9691a3e376bd9834c4f8d9422d05a72ac594f6fb86fb6f"
     },
     {
       "path": "methylation/tests/test_extension_grid.py",
@@ -744,7 +774,7 @@
     {
       "path": "public-api/provenance.json",
       "bytes": 624,
-      "sha256": "1ac7c2a757e40bbf9fc74b18b3c13f9b6ec15bcc2f2048af70c8472d92089b9f"
+      "sha256": "74bafa82695caa842e2dddd8ea7dcd86eeb347959b6dc6ef28c93836a89ac251"
     },
     {
       "path": "public-api/test-api.mjs",
@@ -788,8 +818,8 @@
     },
     {
       "path": "verify_release.py",
-      "bytes": 1222,
-      "sha256": "0fb8eda3ef17712dfa05fe4f356d91624df889685367efd07ce67c45afe284bb"
+      "bytes": 2115,
+      "sha256": "3614e2c91a9d5cb655ab4f57f0b09b834cea31eb9f42bdcc116717ed02f954fd"
     }
   ],
   "scope": "This directory only; excludes original root files and private Git history."

@@ -1,15 +1,45 @@
 {
-  "scope": "Executed packaged public API and bounded synthetic contract tests; no training, model downloads or private-data rebuilds.",
+  "scope": "Local bounded public API, synthetic contracts, exact-function export/validator AST tests and real default-dispatch synthetic SQLite checks; no training or private data.",
+  "observed_utc": "2026-10-08T05:54:27.946812+00:00",
   "tests": {
     "public_api_node": 19,
-    "integration_pytest": 30,
+    "integration_pytest": 37,
     "food_quality_pytest": 36,
     "food_dictionary_pytest": 23,
-    "selected_evidence_pytest": 40
+    "selected_evidence_pytest": 40,
+    "isolated_export_manifest_pytest": 2,
+    "isolated_intervention_validation_pytest": 52
   },
-  "total_passed": 148,
-  "r_sources_parsed": 4,
+  "total_passed": 209,
+  "python_passed": 190,
+  "local_environment": {
+    "python": "3.12",
+    "node": "26.7.0",
+    "direct_dependencies": "ci/requirements.txt",
+    "transitive_dependencies_locked": false
+  },
+  "remote_ci": {
+    "workflow": ".github/workflows/public-components.yml",
+    "runtime": "Python3.12, Node22, standard Ubuntu24.04 CPU",
+    "result": "Consult the actual run for the exact commit; this file records local results."
+  },
   "inference_runtime_verified": false,
   "new_public_deployment_verified": false,
-  "not_run": "Full scientific suites requiring unavailable SciPy/scikit-learn/Torch/R dependencies or omitted private inputs; script-dependent tests excluded as manifest documents."
+  "real_intervention_outputs_revalidated": false,
+  "not_run": "Full package imports or scientific suites requiring SciPy/scikit-learn/Torch/R, models, omitted scripts/private inputs. No new scientific analysis, data download or cohort acquisition.",
+  "previous_release_validation": {
+    "scope": "Executed packaged public API and bounded synthetic contract tests; no training, model downloads or private-data rebuilds.",
+    "tests": {
+      "public_api_node": 19,
+      "integration_pytest": 30,
+      "food_quality_pytest": 36,
+      "food_dictionary_pytest": 23,
+      "selected_evidence_pytest": 40
+    },
+    "total_passed": 148,
+    "r_sources_parsed": 4,
+    "inference_runtime_verified": false,
+    "new_public_deployment_verified": false,
+    "not_run": "Full scientific suites requiring unavailable SciPy/scikit-learn/Torch/R dependencies or omitted private inputs; script-dependent tests excluded as manifest documents."
+  }
 }

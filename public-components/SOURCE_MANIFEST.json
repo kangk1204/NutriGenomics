@@ -46,12 +46,13 @@
     {
       "path": "integration/src/nutriomics_final/api.py",
       "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
-      "distribution_sha256": "e960d049c2752b6e7b63b4156f488a459416879b6f7d3ac92f7e1d867ee62ab4",
+      "distribution_sha256": "ead6b079444468746f35835ad6dcc6492716427b3ced52662ad395faeeed84f3",
       "reviewed_input_sha256": "e960d049c2752b6e7b63b4156f488a459416879b6f7d3ac92f7e1d867ee62ab4",
       "upstream_source_sha256": "871744df42a0eeb26b5ecda1ac905dd837993c1acb6ea9c056f392dfc9a155b9",
       "upstream_status": "verified frozen source at named commit",
       "changes": [
-        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit.",
+        "Public-release maintenance based on NutriGenomics/main@007df256bed40ba26aa9226363afba00c4e5e241: Default dispatcher binds subprocess imports to one auditable source layout."
       ]
     },
     {
@@ -66,11 +67,13 @@
     {
       "path": "integration/src/nutriomics_final/dispatch.py",
       "source_repository": "kangk1204/nutriomics-final-report@4c9d4d32b545ad096a2c3a5170dbc442f6baf6dd",
-      "distribution_sha256": "971bebac3409104947d4772356ee921299007ab45653b0b08ca8c6121523e09c",
+      "distribution_sha256": "32e9a0bac0b682041406a9c1731fc331b6463e7f20affde2ea149fbbe248a51d",
       "reviewed_input_sha256": "971bebac3409104947d4772356ee921299007ab45653b0b08ca8c6121523e09c",
       "upstream_source_sha256": "971bebac3409104947d4772356ee921299007ab45653b0b08ca8c6121523e09c",
       "upstream_status": "verified frozen source at named commit",
-      "changes": []
+      "changes": [
+        "Public-release maintenance based on NutriGenomics/main@007df256bed40ba26aa9226363afba00c4e5e241: Resolve public/original source layouts and verify executed first-party module paths and hashes against the before snapshot."
+      ]
     },
     {
       "path": "integration/src/nutriomics_final/food_registry.py",
@@ -583,12 +586,13 @@
     {
       "path": "methylation/src/nutriomics_methylation/evaluation.py",
       "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
-      "distribution_sha256": "2db1e93ee1a2190e55560de637831da148daddd8ea55212c78a0b901bac514fd",
+      "distribution_sha256": "660f1de16c526d903c5926092e35ae2cca4ce068608c1dfdec9f854802e543ff",
       "reviewed_input_sha256": "2db1e93ee1a2190e55560de637831da148daddd8ea55212c78a0b901bac514fd",
       "upstream_source_sha256": "e2a5caab7546ef46e9d2adddee890c4616ebf6f37add007b4f144cdce28e980e",
       "upstream_status": "verified frozen source at named commit",
       "changes": [
-        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+        "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit.",
+        "Public-release maintenance based on NutriGenomics/main@007df256bed40ba26aa9226363afba00c4e5e241: Generate the sorted export inventory after writing SUMMARY.md so first and repeated exports record current hashes."
       ]
     },
     {
@@ -783,11 +787,13 @@
     {
       "path": "intervention-atlas/src/nutriomics_atlas/validation.py",
       "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
-      "distribution_sha256": "2fffe82c89abdc6c363a722263eaa75dfee0ec71708e2d918f1e28a18d670835",
+      "distribution_sha256": "e1f7e0170b293c51a29aa0d8ecc88062a7e421b846be30a6b0020397649c17ab",
       "reviewed_input_sha256": "2fffe82c89abdc6c363a722263eaa75dfee0ec71708e2d918f1e28a18d670835",
       "upstream_source_sha256": "2fffe82c89abdc6c363a722263eaa75dfee0ec71708e2d918f1e28a18d670835",
       "upstream_status": "verified frozen source at named commit",
-      "changes": []
+      "changes": [
+        "Public-release maintenance based on NutriGenomics/main@007df256bed40ba26aa9226363afba00c4e5e241: Check actual study-family BH, estimable uncertainty, identities/counts, empty results and declared receipt coverage; preserve explicit non-estimable rows."
+      ]
     },
     {
       "path": "intervention-atlas/pyproject.toml",
@@ -1250,6 +1256,61 @@
       "upstream_status": "verified frozen source at named commit",
       "changes": [
         "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit."
+      ]
+    },
+    {
+      "path": "integration/src/nutriomics_final/execution_sources.py",
+      "source_repository": null,
+      "distribution_sha256": "1bc00c46e81feaa962cd2645ac5a3891ad2be1f00161d39ba40967262f33172d",
+      "reviewed_input_sha256": null,
+      "upstream_source_sha256": null,
+      "upstream_status": "Original bounded public-release maintenance; no frozen upstream Git assertion.",
+      "changes": [
+        "Added for bounded CPU CI and receipt/source-identity correctness; synthetic regression fixtures only."
+      ]
+    },
+    {
+      "path": "integration/tests/test_default_dispatch.py",
+      "source_repository": null,
+      "distribution_sha256": "4603906b961da9f8b3572705b693bc2e62348d1f8697fb6237ac686ce2fb794d",
+      "reviewed_input_sha256": null,
+      "upstream_source_sha256": null,
+      "upstream_status": "Original bounded public-release maintenance; no frozen upstream Git assertion.",
+      "changes": [
+        "Added for bounded CPU CI and receipt/source-identity correctness; synthetic regression fixtures only."
+      ]
+    },
+    {
+      "path": "methylation/tests/test_export_manifest.py",
+      "source_repository": null,
+      "distribution_sha256": "40064beccb0611a0fc9691a3e376bd9834c4f8d9422d05a72ac594f6fb86fb6f",
+      "reviewed_input_sha256": null,
+      "upstream_source_sha256": null,
+      "upstream_status": "Original bounded public-release maintenance; no frozen upstream Git assertion.",
+      "changes": [
+        "Added for bounded CPU CI and receipt/source-identity correctness; synthetic regression fixtures only."
+      ]
+    },
+    {
+      "path": "intervention-atlas/tests/test_validation_contract.py",
+      "source_repository": null,
+      "distribution_sha256": "c60549b1bdd4039e93a2b8b3dcb984a1ceef4f1520fae7c097a4ce119c7d8e93",
+      "reviewed_input_sha256": null,
+      "upstream_source_sha256": null,
+      "upstream_status": "Original bounded public-release maintenance; no frozen upstream Git assertion.",
+      "changes": [
+        "Added for bounded CPU CI and receipt/source-identity correctness; synthetic regression fixtures only."
+      ]
+    },
+    {
+      "path": "ci/requirements.txt",
+      "source_repository": null,
+      "distribution_sha256": "f000517e3b586e706c0d2f55b0963cf0b166410a2e68fbc798bae033f29b75d9",
+      "reviewed_input_sha256": null,
+      "upstream_source_sha256": null,
+      "upstream_status": "Original bounded public-release maintenance; no frozen upstream Git assertion.",
+      "changes": [
+        "Added for bounded CPU CI and receipt/source-identity correctness; synthetic regression fixtures only."
       ]
     }
   ]

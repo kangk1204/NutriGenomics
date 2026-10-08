@@ -10,6 +10,13 @@ Changes from frozen upstream code are marked by distinct hashes in `SOURCE_MANIF
 
 Public packaging changes require an explicit R input root instead of a personal host path; remove the withheld Kang license package-data reference; correct the integration test's sibling package path and declare its local test imports; and omit historical script-dependent or private rebuild tests whose inputs are not part of this release. No scientific fitting or protocol change was performed.
 
+Public-release maintenance adds a bounded CPU CI gate, current-summary export
+hashes, study-family/uncertainty/count/receipt validation, and source-bound
+default dispatch for unique public or original layouts. New regression inputs
+are synthetic. Original/review-input hashes remain preserved in the source
+manifest; maintained distribution hashes are separate. No result tables,
+analysis estimators, frozen protocol IDs or private branches are rewritten.
+
 KangDTI-derived helpers, control models, dependent CLI/tests and settings are withheld because their existing notice authorizes private research reuse only. Participant-level data/predictions, clinical metadata, reports, source literature bodies, unresolved FooDB/CTD/BindingDB/ChEMBL data, private seeds and trained model assets are withheld. Data-access application approval, including RDA academic/education use, does not by itself authorize public redistribution.
 
 The original nine files in the public destination are preserved. This release imports no private Git history. Its source provenance identifies the distinct original components and commits; repository ownership/permissions do not establish a live runtime owner or deployment.

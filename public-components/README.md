@@ -20,6 +20,10 @@ The separate research quantity criterion is **4,630 = 2,563 + 2,067**, satisfied
 
 ## Reproduce bounded checks
 
+[Bounded CI](ci/README.md) documents the exact CPU-only test gate and its
+limitations. The repository's `Public components` Actions run verifies tracked
+release hashes and runs the selected synthetic checks for its exact commit.
+
 Use an existing Node 22+ runtime, with no npm installation:
 
 ```sh
@@ -41,5 +45,12 @@ python -m pytest -q test_dictionary.py
 Install each scientific package from its own directory when needed; dependencies and optional model frameworks are declared in its `pyproject.toml`. Scientific training, model downloads, raw cohort acquisition and full private-data rebuilds are separate operations. They were not executed for this public release. Synthetic tests establish code contracts, not scientific performance. Script-dependent tests whose scripts were outside the reviewed allowlist and four private dictionary rebuild tests are omitted and recorded in the source manifest.
 
 `SOURCE_MANIFEST.json` distinguishes frozen upstream hashes, corrected review-input hashes and actual distribution hashes. `PUBLIC_MANIFEST.json` hashes every published file except itself. `NOTICE.md` identifies licensing, reviewed changes and exclusions. Raw public snapshots and their rights manifests are available in `public-data/`; no private history, participant results, reports, weights, research DB or credentials are included.
+
+The export receipt now inventories `SUMMARY.md` after writing it. Intervention
+validation checks the recorded study-family BH values, estimable effects and
+uncertainty, counts, identities and declared receipt inventories. Default
+integration dispatch supports one unambiguous public or original source layout
+and checks executed first-party module paths/hashes against its source snapshot.
+These repairs do not change scientific estimators or frozen protocol IDs.
 
 DearMeal has no verified repository/harness identity in this release. The image adapter is not treated as DearMeal or as another similarly named project. API deployment must be coordinated with the exact existing Site owner and verified with unauthenticated HTTP success/error/schema/export checks against the actual deployed commit.

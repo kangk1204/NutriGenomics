@@ -125,7 +125,8 @@ def create_app(root: Path, database: Path | None=None, output: Path | None=None,
         import json
         path=Path(job['output'])/'job.json'
         path.write_text(json.dumps(job,ensure_ascii=False),encoding='utf-8')
-        return [sys.executable,'-m','nutriomics_final.dispatch','--root',str(root),'--job',str(path)]
+        from .execution_sources import bound_command
+        return bound_command(root,job['algorithm'],[sys.executable,'-m','nutriomics_final.dispatch','--root',str(root),'--job',str(path)])
     builder = command_builder or dispatch_command
     runner = Runner(store, builder)
     stop = threading.Event()

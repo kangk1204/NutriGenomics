@@ -8,22 +8,22 @@ import subprocess
 import sys
 from .api import command_for,safe_path
 from . import __version__
+from .execution_sources import PACKAGES,source_layout,bound_command,current_module_origins,verify_module_origins
 
 def fingerprint(path):
     with path.open('rb') as handle:digest=hashlib.file_digest(handle,'sha256').hexdigest()
     return {'path':str(path),'sha256':digest,'bytes':path.stat().st_size}
 
-PACKAGES = {'evidence':'nutriomics-evidence-engine', 'methylation':'nutriomics-htn-methylation',
-            'intervention':'nutriomics-intervention-atlas', 'compound-target':'nutriomics-compound-target'}
 
 def code_snapshot(root, algorithm):
     """Identify synchronized source bytes even when the server has no Git checkout."""
     snapshots=[]
-    for name in ('nutriomics-final-report', PACKAGES[algorithm]):
-        repo=root/name
+    for source in source_layout(root,algorithm):
+        name=source['package'];repo=source['directory']
         files=[]
         for path in sorted((repo/'src').rglob('*.py')):
             if '__pycache__' not in path.parts:
+                if path.is_symlink() or not path.resolve().is_relative_to(repo):raise ValueError('Unauditable source file: '+str(path))
                 files.append({**fingerprint(path),'relative_path':path.relative_to(repo).as_posix()})
         if not files:
             raise ValueError('Auditable source checkout missing: '+name)
@@ -41,13 +41,20 @@ def execute(root,job):
     input_before,input_hash=input_identity(root,job['algorithm'],job['action'],job['parameters'])
     (output/'input_manifest.json').write_text(json.dumps(input_before,ensure_ascii=False,indent=2),encoding='utf-8')
     command=command_for(root,sys.executable,job)
-    subprocess.run(command,check=True)
+    receipt=output/'execution_modules.json'
+    subprocess.run(bound_command(root,job['algorithm'],command,receipt),check=True)
+    module_origins=json.loads(receipt.read_text(encoding='utf-8'))['origins']
+    module_origins.extend(current_module_origins(root,job['algorithm']))
+    module_origins.append({'module':'nutriomics_final.dispatch',**fingerprint(Path(__file__).resolve())})
+    verify_module_origins(before,module_origins)
     algorithm=job['algorithm'];params=job['parameters'];sources=[];models=[]
     if algorithm=='methylation':
         study=output
         if job['action']=='train':
             for action in ('evaluate','export'):
-                subprocess.run([sys.executable,'-m','nutriomics_methylation.cli',action,'--root',str(study)],check=True)
+                followup=output/('execution_modules_'+action+'.json')
+                subprocess.run(bound_command(root,job['algorithm'],[sys.executable,'-m','nutriomics_methylation.cli',action,'--root',str(study)],followup),check=True)
+                origins=json.loads(followup.read_text(encoding='utf-8'))['origins'];verify_module_origins(before,origins);module_origins.extend(origins)
         if job['action']=='train':
             validation=study/'docs'/'validation'
             if validation.exists():shutil.copytree(validation,output/'report',dirs_exist_ok=True)
@@ -89,6 +96,7 @@ def execute(root,job):
     input_after,after_hash=input_identity(root,algorithm,job['action'],params)
     if input_hash!=after_hash:raise RuntimeError('Protocol inputs changed during execution')
     provenance={'model_version':model_version,'model_manifests':models,'sources':sources,'code_files':code,'code_snapshots':before,
+                'module_origins':module_origins,
                 'code_version':hashlib.sha256(json.dumps([(s['package'],s['source_tree_sha256']) for s in before]).encode()).hexdigest(),
                 'service_version':__version__,'research_only':True,'verified_treatment_effect':False,
                 'protocol_id':fixed_protocol,'input_hash':input_hash,'output_manifest':'output_manifest.json'}

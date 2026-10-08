@@ -181,10 +181,6 @@ def export(root):
         commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, stderr=subprocess.DEVNULL, text=True).strip()
     except (subprocess.CalledProcessError, FileNotFoundError):
         commit = "uncommitted_initial_implementation"
-    files = [{"path": p.relative_to(root).as_posix(), "sha256": sha256(p), "bytes": p.stat().st_size} for p in target.iterdir() if p.is_file() and p.name != "artifact_manifest.json"]
-    code = [{"path": p.relative_to(root).as_posix(), "sha256": sha256(p)} for p in sorted((root / "src").rglob("*.py"))]
-    write_json(target / "artifact_manifest.json", {"files": files, "code_files": code, "code_revision_at_export": commit, "versions": versions(),
-               "not_clinical": True, "no_causal_dietary_claim": True, "analysis_unit": "participant/GSM", "data_access": "official public GEO HTTPS"})
     summary = pd.read_csv(target / "performance.tsv", sep="\t")
     lines = ["# Observed validation results", "", "Research-only results on deposited public samples. No guaranteed performance, clinical risk or causal dietary response.",
              "", "All intervals condition on the realized predictions. They do not include CV/model-selection uncertainty.", "",
@@ -196,4 +192,8 @@ def export(root):
     lines += ["", "The common probe mask was frozen from measurement IDs before outcome mapping. All learned QC, median imputation, variance selection, scaling and tuning used training folds only.",
               "", "preHT44 was excluded from fit/tuning. GSE42774 is an exploratory n16 transfer study across 450k/27k, age, ancestry and sex distributions. Individual age/sex adjustment was not fabricated.", ""]
     (target / "SUMMARY.md").write_text("\n".join(lines), encoding="utf-8")
+    files = [{"path": p.relative_to(root).as_posix(), "sha256": sha256(p), "bytes": p.stat().st_size} for p in sorted(target.iterdir()) if p.is_file() and p.name != "artifact_manifest.json"]
+    code = [{"path": p.relative_to(root).as_posix(), "sha256": sha256(p)} for p in sorted((root / "src").rglob("*.py"))]
+    write_json(target / "artifact_manifest.json", {"files": files, "code_files": code, "code_revision_at_export": commit, "versions": versions(),
+               "not_clinical": True, "no_causal_dietary_claim": True, "analysis_unit": "participant/GSM", "data_access": "official public GEO HTTPS"})
     return target
