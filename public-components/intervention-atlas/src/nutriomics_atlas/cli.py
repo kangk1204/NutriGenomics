@@ -39,5 +39,6 @@ def main(argv=None):
         result=validate_output(args.input_dir)
     print(json.dumps(result,ensure_ascii=False,indent=2))
     if result.get('errors'):raise SystemExit(1)
+    if args.command=='validate' and result.get('full_validation_passed') is not True:raise SystemExit(2)
 
 if __name__=='__main__':main()

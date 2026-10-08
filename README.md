@@ -4,7 +4,7 @@
 
 현재 공개 데이터 전용 API의 배포와 모델 추론의 공개 HTTP 동작은 **미검증**입니다. 공개 배포 진입점은 `public-components/public-api/worker.mjs`입니다.
 
-제한된 로컬 검증 **209건(API 19건 + Python 190건)**이 통과했습니다. [CPU CI의 검사 범위](public-components/ci/README.md)와 [Public components 원격 실행 기록](https://github.com/kangk1204/NutriGenomics/actions/workflows/public-components.yml)을 확인하세요. 로컬 통과 수와 각 커밋의 원격 CI 결과는 별도이며, 합성 시험은 임상 정확도나 전체 파이프라인 재현을 인증하지 않습니다.
+제한된 로컬 검증 **232건(API 19건 + Python 213건)**이 통과했습니다. [CPU CI의 검사 범위](public-components/ci/README.md)와 [Public components 원격 실행 기록](https://github.com/kangk1204/NutriGenomics/actions/workflows/public-components.yml)을 확인하세요. 로컬 통과 수와 각 커밋의 원격 CI 결과는 별도이며, 합성 시험은 임상 정확도나 전체 파이프라인 재현을 인증하지 않습니다.
 
 ## Legacy: 선택적인 대용량 다운로드 안내
 

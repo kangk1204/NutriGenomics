@@ -20,6 +20,9 @@ def validate_output(directory: Path) -> dict:
     except (OSError, ValueError) as exc:
         return {'accession': None, 'independent_people': None, 'tables': {},
                 'errors': ['invalid analysis metadata: ' + str(exc)],
+                'validation_status': 'failed', 'provenance_status': 'invalid',
+                'provenance_basis': None, 'full_validation_passed': False,
+                'validation_scope': 'Result table contracts and supplied file receipts; not scientific certification.',
                 'patient_multiomics_fusion_confirmed': False}
 
     accession = metadata.get('accession')
@@ -161,9 +164,13 @@ def validate_output(directory: Path) -> dict:
                     errors.append(label + ' provenance hash mismatch ' + filename)
         return names, hashed
 
+    provenance_error_start = len(errors)
+    result_hashes = set()
+    run_hashes = set()
     if 'result_files' in metadata:
         records = metadata['result_files']
         names, hashed = inspect_inventory(records, 'result')
+        result_hashes = hashed
         if not set(expected).issubset(names):
             errors.append('result inventory omits expected tables')
         if isinstance(records, list) and any(isinstance(record, dict) for record in records) and not set(expected).issubset(hashed):
@@ -183,7 +190,23 @@ def validate_output(directory: Path) -> dict:
             if receipt.get('status') != 'completed' or type(receipt.get('returncode')) is not int or receipt['returncode'] != 0:
                 errors.append('R run is not completed')
             _, hashed = inspect_inventory(receipt.get('outputs'), 'output', require_hash=True)
+            run_hashes = hashed
             if not (set(expected) | {'analysis_metadata.json'}).issubset(hashed):
                 errors.append('output hash inventory omits required results or metadata')
+    result_covered = set(expected).issubset(result_hashes)
+    run_covered = (set(expected) | {'analysis_metadata.json'}).issubset(run_hashes)
+    if len(errors) > provenance_error_start:
+        provenance_status = 'invalid'
+    elif result_covered or run_covered:
+        provenance_status = 'verified'
+    else:
+        provenance_status = 'incomplete'
+    full_validation_passed = not errors and provenance_status == 'verified'
     return {'accession': accession, 'independent_people': cohort, 'tables': tables,
-            'errors': errors, 'patient_multiomics_fusion_confirmed': False}
+            'errors': errors,
+            'validation_status': 'passed' if full_validation_passed else 'failed' if errors else 'incomplete_provenance',
+            'provenance_status': provenance_status,
+            'provenance_basis': ('result_hash_inventory' if result_covered else 'completed_run_hash_inventory') if provenance_status == 'verified' else None,
+            'full_validation_passed': full_validation_passed,
+            'validation_scope': 'Result table contracts and supplied file receipts; not scientific certification.',
+            'patient_multiomics_fusion_confirmed': False}

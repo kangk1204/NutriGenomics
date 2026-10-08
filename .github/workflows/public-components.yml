@@ -64,4 +64,4 @@ jobs:
         run: python -m pytest -q -p no:cacheprovider tests/test_export_manifest.py
       - name: Test isolated intervention validation contracts
         working-directory: public-components/intervention-atlas
-        run: python -m pytest -q -p no:cacheprovider tests/test_validation_contract.py
+        run: python -m pytest -q -p no:cacheprovider tests/test_validation_contract.py tests/test_provenance_gate.py

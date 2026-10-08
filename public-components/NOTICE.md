@@ -17,6 +17,12 @@ are synthetic. Original/review-input hashes remain preserved in the source
 manifest; maintained distribution hashes are separate. No result tables,
 analysis estimators, frozen protocol IDs or private branches are rewritten.
 
+Receipt follow-up limits export inventories to the current call without deleting
+older artifacts. Atlas reports incomplete provenance for outputs without a
+complete hash inventory, and its validation CLI returns a nonzero exit code for
+that state. Native metadata/result and R-run receipt formats remain supported;
+no missing receipt is fabricated.
+
 KangDTI-derived helpers, control models, dependent CLI/tests and settings are withheld because their existing notice authorizes private research reuse only. Participant-level data/predictions, clinical metadata, reports, source literature bodies, unresolved FooDB/CTD/BindingDB/ChEMBL data, private seeds and trained model assets are withheld. Data-access application approval, including RDA academic/education use, does not by itself authorize public redistribution.
 
 The original nine files in the public destination are preserved. This release imports no private Git history. Its source provenance identifies the distinct original components and commits; repository ownership/permissions do not establish a live runtime owner or deployment.

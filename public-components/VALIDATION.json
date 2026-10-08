@@ -1,17 +1,17 @@
 {
-  "scope": "Local bounded public API, synthetic contracts, exact-function export/validator AST tests and real default-dispatch synthetic SQLite checks; no training or private data.",
-  "observed_utc": "2026-10-08T05:54:27.946812+00:00",
+  "scope": "Local bounded public API, synthetic contracts, exact-function export/validator and CLI AST tests and real default-dispatch synthetic SQLite checks; no training or private data.",
+  "observed_utc": "2026-10-08T06:24:22.627147+00:00",
   "tests": {
     "public_api_node": 19,
     "integration_pytest": 37,
     "food_quality_pytest": 36,
     "food_dictionary_pytest": 23,
     "selected_evidence_pytest": 40,
-    "isolated_export_manifest_pytest": 2,
-    "isolated_intervention_validation_pytest": 52
+    "isolated_export_manifest_pytest": 4,
+    "isolated_intervention_validation_pytest": 73
   },
-  "total_passed": 209,
-  "python_passed": 190,
+  "total_passed": 232,
+  "python_passed": 213,
   "local_environment": {
     "python": "3.12",
     "node": "26.7.0",
@@ -41,5 +41,34 @@
     "inference_runtime_verified": false,
     "new_public_deployment_verified": false,
     "not_run": "Full scientific suites requiring unavailable SciPy/scikit-learn/Torch/R dependencies or omitted private inputs; script-dependent tests excluded as manifest documents."
+  },
+  "previous_bounded_cpu_validation": {
+    "commit": "4c8eac5b6662d44247dcc6de221cf9bdebdb59ab",
+    "tests": {
+      "public_api_node": 19,
+      "integration_pytest": 37,
+      "food_quality_pytest": 36,
+      "food_dictionary_pytest": 23,
+      "selected_evidence_pytest": 40,
+      "isolated_export_manifest_pytest": 2,
+      "isolated_intervention_validation_pytest": 52
+    },
+    "total_passed": 209,
+    "python_passed": 190,
+    "remote_ci_run_id": 37735317257,
+    "remote_ci_conclusion": "success"
+  },
+  "followup_contracts": {
+    "export_inventory": "Only files written by the current export are hashed; obsolete destination files are preserved.",
+    "atlas_provenance": "Full contract validation requires native result hashes or completed-run output hashes; absent/name-only receipts remain structurally compatible but incomplete.",
+    "atlas_cli_exit_codes": {
+      "passed": 0,
+      "invalid": 1,
+      "incomplete_provenance": 2
+    },
+    "new_provenance_status_and_cli_cases": 21,
+    "new_export_obsolete_file_cases": 2,
+    "actual_producer_outputs_revalidated": false,
+    "test_import_scope": "Native I/O helpers and exact source function/CLI bodies; not full SciPy-dependent package import."
   }
 }

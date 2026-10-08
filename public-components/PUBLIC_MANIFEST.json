@@ -13,28 +13,28 @@
     },
     {
       "path": "NOTICE.md",
-      "bytes": 2957,
-      "sha256": "a732e02bc59dff4bc7c7f09448c56c609d19e4979c0a55ee2aceb87023df19c5"
+      "bytes": 3307,
+      "sha256": "97af74032520e842c56c5a8ae22c6267cebc296621590a1d065827c4bd1747b5"
     },
     {
       "path": "README.md",
-      "bytes": 4923,
-      "sha256": "15dc5030d6483057e9729f1e6ef6eb5356b65ec7f03f4faff5936247148b8f02"
+      "bytes": 5652,
+      "sha256": "61d5b390221dcd71228b8f5c6cb952a8a1c16a1c138b2e78c5f98334fe0681b7"
     },
     {
       "path": "SOURCE_MANIFEST.json",
-      "bytes": 80545,
-      "sha256": "9354dc8b83bc8cc1681ac1339103b7261fd63d3b8e712a0c9f170f5c165bc61f"
+      "bytes": 81995,
+      "sha256": "f918dd88324fc55c68ab53871171ee4c90edd89854a85f95486117cc2d81ddd5"
     },
     {
       "path": "VALIDATION.json",
-      "bytes": 1983,
-      "sha256": "44564b72bcd486b12accea877fe11fa61a1e7c6907d81b8dd2dd9de42fff6b14"
+      "bytes": 3217,
+      "sha256": "80dec829c0d19281364077b9c472abd214b3769d9720c06876d21553581d5df9"
     },
     {
       "path": "ci/README.md",
-      "bytes": 1943,
-      "sha256": "a60d233fdde7b7a1200ab905f6e878e17d5d0adc75ec62379d4f7c49e6039f3c"
+      "bytes": 2405,
+      "sha256": "e98686c27484d46d13791942558b0b56da696f735d894ee364e779c83c60a4e5"
     },
     {
       "path": "ci/requirements.txt",
@@ -603,8 +603,8 @@
     },
     {
       "path": "intervention-atlas/src/nutriomics_atlas/cli.py",
-      "bytes": 3211,
-      "sha256": "2efca513b414d226370c0d6ccc9597d6dfa473ab05386a6a69906a04a9995ef3"
+      "bytes": 3316,
+      "sha256": "5ca9185d4bd4ef23c8e1dbdba1b7e59176dd2baaeb291bc38b59d371872b649c"
     },
     {
       "path": "intervention-atlas/src/nutriomics_atlas/counts.py",
@@ -643,8 +643,8 @@
     },
     {
       "path": "intervention-atlas/src/nutriomics_atlas/validation.py",
-      "bytes": 10205,
-      "sha256": "e1f7e0170b293c51a29aa0d8ecc88062a7e421b846be30a6b0020397649c17ab"
+      "bytes": 11586,
+      "sha256": "71cee2c653d3099986f6daae6990ff4fcd7686380f87b8bd297027cbc0f982fd"
     },
     {
       "path": "intervention-atlas/tests/test_inventory.py",
@@ -655,6 +655,11 @@
       "path": "intervention-atlas/tests/test_metabolomics.py",
       "bytes": 5979,
       "sha256": "0374966871feead825db764793277fd646cee645b57702b3b136f2da341b0ca2"
+    },
+    {
+      "path": "intervention-atlas/tests/test_provenance_gate.py",
+      "bytes": 9379,
+      "sha256": "471fe59022db67216d7d9c7e2bc35a44e462a0ab0292f03802185e4a4a41b3dd"
     },
     {
       "path": "intervention-atlas/tests/test_validation_contract.py",
@@ -693,8 +698,8 @@
     },
     {
       "path": "methylation/src/nutriomics_methylation/evaluation.py",
-      "bytes": 12807,
-      "sha256": "660f1de16c526d903c5926092e35ae2cca4ce068608c1dfdec9f854802e543ff"
+      "bytes": 13212,
+      "sha256": "3f7a2b528d3f2462647c974001ebbc0c481f409a30e04a68ae88acf4fc25aeac"
     },
     {
       "path": "methylation/src/nutriomics_methylation/extension_grid.py",
@@ -733,8 +738,8 @@
     },
     {
       "path": "methylation/tests/test_export_manifest.py",
-      "bytes": 3611,
-      "sha256": "40064beccb0611a0fc9691a3e376bd9834c4f8d9422d05a72ac594f6fb86fb6f"
+      "bytes": 6545,
+      "sha256": "205ea1ac47eda97ac386435708df3ca6d93d68048bd69fa5f6c0ce0e68fd0e74"
     },
     {
       "path": "methylation/tests/test_extension_grid.py",
@@ -774,7 +779,7 @@
     {
       "path": "public-api/provenance.json",
       "bytes": 624,
-      "sha256": "74bafa82695caa842e2dddd8ea7dcd86eeb347959b6dc6ef28c93836a89ac251"
+      "sha256": "ddf8a9a306e55c70b5e08588411ceea4f9a34da1f6226be6a4d2a56417a3d648"
     },
     {
       "path": "public-api/test-api.mjs",

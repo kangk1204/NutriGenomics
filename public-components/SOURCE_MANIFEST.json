@@ -586,13 +586,14 @@
     {
       "path": "methylation/src/nutriomics_methylation/evaluation.py",
       "source_repository": "kangk1204/nutriomics-htn-methylation@0af849bf046c0065370ee4a1d1b48c53416ddd29",
-      "distribution_sha256": "660f1de16c526d903c5926092e35ae2cca4ce068608c1dfdec9f854802e543ff",
+      "distribution_sha256": "3f7a2b528d3f2462647c974001ebbc0c481f409a30e04a68ae88acf4fc25aeac",
       "reviewed_input_sha256": "2db1e93ee1a2190e55560de637831da148daddd8ea55212c78a0b901bac514fd",
       "upstream_source_sha256": "e2a5caab7546ef46e9d2adddee890c4616ebf6f37add007b4f144cdce28e980e",
       "upstream_status": "verified frozen source at named commit",
       "changes": [
         "Audited correctness repair; corrected bytes are not claimed to exist at upstream commit.",
-        "Public-release maintenance based on NutriGenomics/main@007df256bed40ba26aa9226363afba00c4e5e241: Generate the sorted export inventory after writing SUMMARY.md so first and repeated exports record current hashes."
+        "Public-release maintenance based on NutriGenomics/main@007df256bed40ba26aa9226363afba00c4e5e241: Generate the sorted export inventory after writing SUMMARY.md so first and repeated exports record current hashes.",
+        "Public-release maintenance based on NutriGenomics/main@4c8eac5b6662d44247dcc6de221cf9bdebdb59ab: Hash only files written by the current export; preserve obsolete destination artifacts."
       ]
     },
     {
@@ -715,11 +716,13 @@
     {
       "path": "intervention-atlas/src/nutriomics_atlas/cli.py",
       "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
-      "distribution_sha256": "2efca513b414d226370c0d6ccc9597d6dfa473ab05386a6a69906a04a9995ef3",
+      "distribution_sha256": "5ca9185d4bd4ef23c8e1dbdba1b7e59176dd2baaeb291bc38b59d371872b649c",
       "reviewed_input_sha256": "2efca513b414d226370c0d6ccc9597d6dfa473ab05386a6a69906a04a9995ef3",
       "upstream_source_sha256": "2efca513b414d226370c0d6ccc9597d6dfa473ab05386a6a69906a04a9995ef3",
       "upstream_status": "verified frozen source at named commit",
-      "changes": []
+      "changes": [
+        "Public-release maintenance based on NutriGenomics/main@4c8eac5b6662d44247dcc6de221cf9bdebdb59ab: Return exit 2 for incomplete provenance, exit 1 for invalid outputs and exit 0 only for full contract validation."
+      ]
     },
     {
       "path": "intervention-atlas/src/nutriomics_atlas/counts.py",
@@ -787,12 +790,13 @@
     {
       "path": "intervention-atlas/src/nutriomics_atlas/validation.py",
       "source_repository": "kangk1204/nutriomics-intervention-atlas@beae3150e891a4b900bed6892b67aa9f6eb0d5ac",
-      "distribution_sha256": "e1f7e0170b293c51a29aa0d8ecc88062a7e421b846be30a6b0020397649c17ab",
+      "distribution_sha256": "71cee2c653d3099986f6daae6990ff4fcd7686380f87b8bd297027cbc0f982fd",
       "reviewed_input_sha256": "2fffe82c89abdc6c363a722263eaa75dfee0ec71708e2d918f1e28a18d670835",
       "upstream_source_sha256": "2fffe82c89abdc6c363a722263eaa75dfee0ec71708e2d918f1e28a18d670835",
       "upstream_status": "verified frozen source at named commit",
       "changes": [
-        "Public-release maintenance based on NutriGenomics/main@007df256bed40ba26aa9226363afba00c4e5e241: Check actual study-family BH, estimable uncertainty, identities/counts, empty results and declared receipt coverage; preserve explicit non-estimable rows."
+        "Public-release maintenance based on NutriGenomics/main@007df256bed40ba26aa9226363afba00c4e5e241: Check actual study-family BH, estimable uncertainty, identities/counts, empty results and declared receipt coverage; preserve explicit non-estimable rows.",
+        "Public-release maintenance based on NutriGenomics/main@4c8eac5b6662d44247dcc6de221cf9bdebdb59ab: Distinguish verified, incomplete and invalid native hash provenance; incomplete receipts cannot pass full contract validation."
       ]
     },
     {
@@ -1283,12 +1287,13 @@
     {
       "path": "methylation/tests/test_export_manifest.py",
       "source_repository": null,
-      "distribution_sha256": "40064beccb0611a0fc9691a3e376bd9834c4f8d9422d05a72ac594f6fb86fb6f",
+      "distribution_sha256": "205ea1ac47eda97ac386435708df3ca6d93d68048bd69fa5f6c0ce0e68fd0e74",
       "reviewed_input_sha256": null,
       "upstream_source_sha256": null,
       "upstream_status": "Original bounded public-release maintenance; no frozen upstream Git assertion.",
       "changes": [
-        "Added for bounded CPU CI and receipt/source-identity correctness; synthetic regression fixtures only."
+        "Added for bounded CPU CI and receipt/source-identity correctness; synthetic regression fixtures only.",
+        "Public-release maintenance based on NutriGenomics/main@4c8eac5b6662d44247dcc6de221cf9bdebdb59ab: Add synthetic seeded-obsolete and removed-optional-input regressions verifying preserved bytes, size and mtime."
       ]
     },
     {
@@ -1311,6 +1316,17 @@
       "upstream_status": "Original bounded public-release maintenance; no frozen upstream Git assertion.",
       "changes": [
         "Added for bounded CPU CI and receipt/source-identity correctness; synthetic regression fixtures only."
+      ]
+    },
+    {
+      "path": "intervention-atlas/tests/test_provenance_gate.py",
+      "source_repository": null,
+      "distribution_sha256": "471fe59022db67216d7d9c7e2bc35a44e462a0ab0292f03802185e4a4a41b3dd",
+      "reviewed_input_sha256": null,
+      "upstream_source_sha256": null,
+      "upstream_status": "Original bounded public-release maintenance; no frozen upstream Git assertion.",
+      "changes": [
+        "Add 21 synthetic native-producer-compatible provenance/status/CLI regressions; no real result receipts or scientific revalidation are claimed."
       ]
     }
   ]

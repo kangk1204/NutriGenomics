@@ -46,9 +46,19 @@ Install each scientific package from its own directory when needed; dependencies
 
 `SOURCE_MANIFEST.json` distinguishes frozen upstream hashes, corrected review-input hashes and actual distribution hashes. `PUBLIC_MANIFEST.json` hashes every published file except itself. `NOTICE.md` identifies licensing, reviewed changes and exclusions. Raw public snapshots and their rights manifests are available in `public-data/`; no private history, participant results, reports, weights, research DB or credentials are included.
 
-The export receipt now inventories `SUMMARY.md` after writing it. Intervention
+The export receipt inventories only files successfully written by the current
+export, including `SUMMARY.md` after writing it. Older destination files remain
+untouched and are excluded from that receipt. Intervention
 validation checks the recorded study-family BH values, estimable effects and
-uncertainty, counts, identities and declared receipt inventories. Default
+uncertainty, counts, identities and declared receipt inventories. Structurally
+valid legacy output with no complete hash inventory has
+`validation_status=incomplete_provenance` and `full_validation_passed=false`.
+The `validate` CLI exits 2 for that case, 1 for invalid output or receipts, and 0
+only when table contracts and supplied receipt coverage pass. Hash coverage may
+come from metadata result receipts or a completed run covering results and
+metadata; GSE127530 need not invent a metadata result list, and ST001257 need
+not invent an R run receipt. This verifies supplied output receipts, not
+independent source authenticity or scientific validity. Default
 integration dispatch supports one unambiguous public or original source layout
 and checks executed first-party module paths/hashes against its source snapshot.
 These repairs do not change scientific estimators or frozen protocol IDs.

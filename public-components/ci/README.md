@@ -20,6 +20,13 @@ checks do not establish full package importability, model performance, real
 study validity or clinical utility. Native BH logic and analysis protocols are
 unchanged; explicitly non-estimable rows remain supported.
 
+Export regressions also preserve seeded obsolete files and removed-input
+leftovers while excluding them from the current-call receipt. Atlas regressions
+distinguish missing or filename-only inventories from invalid and hash-verified
+receipts. CLI tests use the native entrypoint with the exact isolated validator
+bound into its import slot; they verify exit codes 2, 1 and 0 without importing
+SciPy. This does not establish the full scientific package runtime.
+
 `requirements.txt` pins the nine direct dependencies used locally. Transitive
 dependencies are not locked. Installation accepts wheels only. No scientific
 package extras, model frameworks, data downloads, training, caches or uploaded

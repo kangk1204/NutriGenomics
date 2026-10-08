@@ -1,6 +1,6 @@
 {
   "schema_version": "nutri-public-provenance-v1",
-  "source_manifest_sha256": "9354dc8b83bc8cc1681ac1339103b7261fd63d3b8e712a0c9f170f5c165bc61f",
+  "source_manifest_sha256": "f918dd88324fc55c68ab53871171ee4c90edd89854a85f95486117cc2d81ddd5",
   "compound_release_id": "fooddb-public-20261005-0230",
   "food_release_id": "nutri-public-food-pilot-20261007",
   "data_rights": "See public-data/rights_manifest.json and foods-rights-manifest.json. Code licensing is separate.",

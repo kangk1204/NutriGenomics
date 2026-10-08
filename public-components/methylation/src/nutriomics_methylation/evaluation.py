@@ -160,23 +160,32 @@ def export(root):
     import subprocess
     target = root / "docs" / "validation"
     target.mkdir(parents=True, exist_ok=True)
+    written_paths = set()
     for path in [root / "results" / "performance.tsv", root / "results" / "metrics_all.json",
                  root / "results" / "training_config.json", root / "data" / "source_manifest.json",
                  root / "data" / "prepared" / "qc_manifest.json"]:
         if not path.exists():
             raise FileNotFoundError(f"Required real validation artifact missing: {path}")
-        shutil.copy2(path, target / path.name)
+        destination = target / path.name
+        shutil.copy2(path, destination)
+        written_paths.add(destination)
     for run in sorted((root / "results").glob("*_*")):
         if not run.is_dir():
             continue
         for path in run.glob("**/marker_stability.tsv"):
             table = pd.read_csv(path, sep="\t", low_memory=False).head(100)
             relative_name = "_".join(path.relative_to(root / "results").parts)
-            table.to_csv(target / relative_name, sep="\t", index=False)
+            destination = target / relative_name
+            table.to_csv(destination, sep="\t", index=False)
+            written_paths.add(destination)
         for path in run.glob("**/*predictions.tsv"):
-            shutil.copy2(path, target / "_".join(path.relative_to(root / "results").parts))
+            destination = target / "_".join(path.relative_to(root / "results").parts)
+            shutil.copy2(path, destination)
+            written_paths.add(destination)
         for path in run.glob("**/*roc_calibration.svg"):
-            shutil.copy2(path, target / "_".join(path.relative_to(root / "results").parts))
+            destination = target / "_".join(path.relative_to(root / "results").parts)
+            shutil.copy2(path, destination)
+            written_paths.add(destination)
     try:
         commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, stderr=subprocess.DEVNULL, text=True).strip()
     except (subprocess.CalledProcessError, FileNotFoundError):
@@ -191,9 +200,11 @@ def export(root):
         lines.append(f"| {analysis} | {int(a['n'])} | {a.estimate:.3f} ({a.ci95_lower:.3f}–{a.ci95_upper:.3f}) | {group.loc['average_precision','estimate']:.3f} | {group.loc['brier','estimate']:.3f} |")
     lines += ["", "The common probe mask was frozen from measurement IDs before outcome mapping. All learned QC, median imputation, variance selection, scaling and tuning used training folds only.",
               "", "preHT44 was excluded from fit/tuning. GSE42774 is an exploratory n16 transfer study across 450k/27k, age, ancestry and sex distributions. Individual age/sex adjustment was not fabricated.", ""]
-    (target / "SUMMARY.md").write_text("\n".join(lines), encoding="utf-8")
-    files = [{"path": p.relative_to(root).as_posix(), "sha256": sha256(p), "bytes": p.stat().st_size} for p in sorted(target.iterdir()) if p.is_file() and p.name != "artifact_manifest.json"]
+    summary_path = target / "SUMMARY.md"
+    summary_path.write_text("\n".join(lines), encoding="utf-8")
+    written_paths.add(summary_path)
+    files = [{"path": p.relative_to(root).as_posix(), "sha256": sha256(p), "bytes": p.stat().st_size} for p in sorted(written_paths)]
     code = [{"path": p.relative_to(root).as_posix(), "sha256": sha256(p)} for p in sorted((root / "src").rglob("*.py"))]
-    write_json(target / "artifact_manifest.json", {"files": files, "code_files": code, "code_revision_at_export": commit, "versions": versions(),
+    write_json(target / "artifact_manifest.json", {"files": files, "inventory_scope": "files_written_by_current_export", "code_files": code, "code_revision_at_export": commit, "versions": versions(),
                "not_clinical": True, "no_causal_dietary_claim": True, "analysis_unit": "participant/GSM", "data_access": "official public GEO HTTPS"})
     return target
